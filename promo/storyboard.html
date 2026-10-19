@@ -74,7 +74,6 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font
   <div class="title" id="s1t" style="top:170px;font-size:98px">Tous les restaurants casher.<br><span style="color:var(--gold)">Une seule appli.</span></div>
   <div class="phone" id="s1p" style="left:240px;top:520px"><div class="screen"><div class="island"></div><img class="shot on" id="s1shot" src="shots/v2-restaurants.png"></div></div>
   <div id="s1logos"></div>
-  <div class="badge c" id="s1b" style="top:1700px">👨‍👩‍👧‍👦 Pour toute la famille</div>
 </div>
 
 <div class="scene" id="s2">
@@ -89,8 +88,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font
 <div class="scene" id="s3">
   <div class="kicker" style="top:110px">Livraison KOSH</div>
   <div class="title" id="s3t" style="top:170px;font-size:104px">Livré<br><span style="color:var(--gold)">jusqu'à ta porte.</span></div>
-  <div class="phone" id="s3p" style="left:240px;top:470px"><div class="screen"><div class="island"></div><img class="shot on" id="s3a" src="shots/v2-suivi.png"></div></div>
-  <div class="badge orange c" id="s3badge" style="top:1700px">🛵 Livraison 3,50 €</div>
+  <div class="phone" id="s3p" style="left:240px;top:400px"><div class="screen"><div class="island"></div><img class="shot on" id="s3a" src="shots/v2-suivi.png"></div></div>
+  <div class="badge c" id="s3b1" style="top:1500px">⏱ Livré en 15 min environ</div>
+  <div class="badge orange c" id="s3badge" style="top:1620px">🛵 Livraison 3,50 €</div>
+  <div class="badge blue c" id="s3b3" style="top:1740px">💳 Paiement via Revolut</div>
 </div>
 
 <div class="scene" id="s4">
@@ -135,9 +136,9 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font
 
 <div class="scene" id="s7">
   <div class="brand" id="s7brand" style="top:640px"><img src="icon-512.png"><span>KOSH<i>.</i></span></div>
-  <div class="title" id="s7t" style="top:900px;font-size:92px">Porto, à table.<br><span style="color:var(--gold)">En famille.</span></div>
-  <div class="badge" id="s7url" style="left:50%;top:1230px;transform:translateX(-50%);font-size:64px;padding:30px 60px">PortoKosh.fr</div>
-  <div class="sub" id="s7s" style="top:1410px;font-size:40px">Restaurants casher · Livraison · Jeux · Agenda · Chabbat</div>
+  <div class="title" id="s7t" style="top:900px;font-size:100px">Porto, à table.</div>
+  <div class="badge" id="s7url" style="left:50%;top:1120px;transform:translateX(-50%);font-size:64px;padding:30px 60px">PortoKosh.fr</div>
+  <div class="sub" id="s7s" style="top:1300px;font-size:44px">Restaurants casher · Livraison · Agenda</div>
 </div>
 </div>
 <script>
@@ -157,7 +158,7 @@ function phoneIn(ph,p,base=''){ ph.style.opacity=p>0?1:0; ph.style.transform=`${
 
 const P=[];for(let i=0;i<40;i++){const d=document.createElement('div');d.className='particle';const s=4+Math.random()*10;d.style.width=d.style.height=s+'px';$('#particles').appendChild(d);P.push({d,x:Math.random()*1080,y:Math.random()*1920,v:20+Math.random()*40,o:.2+Math.random()*.5});}
 const LOGOS=['chabad-porto','levfood','chez-fhims','kosherfc','neshama-bakery','yoriz-tartarel','maison-metouka','saveurs-shabbat','koshergo','okaffe','le-j'];
-const LG=LOGOS.map((n,i)=>{const d=document.createElement('div');d.className='logo';d.innerHTML=`<img src="logo-${n}.jpg">`;$('#s1logos').appendChild(d);const side=i%2?1:-1;const row=Math.floor(i/2);return {d,x:side<0?40:890,y:560+row*200,delay:i*.12,side};});
+$('#s1logos').style.display='none';const LG=[];const _unused=LOGOS.map((n,i)=>{const d=document.createElement('div');d.className='logo';d.innerHTML=`<img src="logo-${n}.jpg">`;$('#s1logos').appendChild(d);const side=i%2?1:-1;const row=Math.floor(i/2);return {d,x:side<0?40:890,y:560+row*200,delay:i*.12,side};});
 
 // order sequence shots
 const SEQ=[['kfc','v2-kfc'],['opt','v2-options'],['add','v2-added'],['f0','v2-form-00']];
@@ -186,17 +187,16 @@ window.seek=function(t){
   P.forEach(p=>{const y=((p.y-t*p.v)%1920+1920)%1920;p.d.style.left=p.x+'px';p.d.style.top=y+'px';p.d.style.opacity=p.o*(0.5+0.5*Math.sin(t*2+p.x));});
   if(t<T.s0[1]){const u=t-T.s0[0];pop($('#s0k'),seg(u,0,.5));pop($('#s0a'),seg(u,.15,.8));pop($('#s0b'),seg(u,1.3,1.9));pop($('#s0brand'),seg(u,2.0,2.5),.4,0);
     const out=seg(u,2.8,3.1);$('#s0').style.opacity=1-out;$('#s0').style.transform=`scale(${1+out*.08})`;}
-  if(t>=T.s1[0]&&t<T.s1[1]){const u=t-T.s1[0];slideUp($('#s1t'),seg(u,0,.6));phoneIn($('#s1p'),seg(u,.1,.9),'scale(.92)');
+  if(t>=T.s1[0]&&t<T.s1[1]){const u=t-T.s1[0];slideUp($('#s1t'),seg(u,0,.6));phoneIn($('#s1p'),seg(u,.1,.9),'scale(1)');
     scroll($('#s1shot'),Math.max(0,ease(seg(u,1.0,5.0))*2300));
     LG.forEach(l=>{const p=seg(u,1.0+l.delay,1.6+l.delay);l.d.style.left=l.x+'px';l.d.style.top=l.y+'px';l.d.style.opacity=p;l.d.style.transform=`translateX(${(1-outBack(p))*l.side*300}px) rotate(${(1-p)*l.side*25}deg)`;});
-    badgePop($('#s1b'),seg(u,3.8,4.3),true);
     const out=seg(u,5.2,5.5);$('#s1').style.opacity=1-out;}
   if(t>=T.s2[0]&&t<T.s2[1]){const u=t-T.s2[0];slideUp($('#s2t'),seg(u,0,.6));phoneIn($('#s2p'),seg(u,0,.7),'scale(.95)');
     let k='kfc';
     if(u<1.3){k='kfc';ripple($('#s2r'),518,700,seg(u,.8,1.3));}
     else if(u<2.4){k='opt';ripple($('#s2r'),282,1050,seg(u,1.9,2.4));}
-    else if(u<2.9){k='add';}
-    else if(u<3.2){k='f0';}
+    else if(u<3.0){k='add';ripple($('#s2r'),282,1120,seg(u,2.5,3.0));}
+    else if(u<3.3){k='f0';}
     else if(u<4.4){k='n'+Math.min(5,1+Math.floor((u-3.2)/0.22));}
     else if(u<6.1){k='t'+Math.min(14,1+Math.floor((u-4.4)/0.115));}
     else if(u<7.7){k='a'+Math.min(20,1+Math.floor((u-6.1)/0.075));}
@@ -205,9 +205,9 @@ window.seek=function(t){
     const b1=u>=3.2&&u<4.4, b2=u>=4.4&&u<6.1, b3=u>=6.1&&u<7.8;
     badgePop($('#s2b1'),b1?seg(u,3.2,3.6):0,true);badgePop($('#s2b2'),b2?seg(u,4.4,4.8):0,true);badgePop($('#s2b3'),b3?seg(u,6.1,6.5):0,true);
     const out=seg(u,8.1,8.3);$('#s2').style.opacity=1-out;}
-  if(t>=T.s3[0]&&t<T.s3[1]){const u=t-T.s3[0];slideUp($('#s3t'),seg(u,0,.6));phoneIn($('#s3p'),seg(u,0,.6),'scale(.95)');
+  if(t>=T.s3[0]&&t<T.s3[1]){const u=t-T.s3[0];slideUp($('#s3t'),seg(u,0,.6));phoneIn($('#s3p'),seg(u,0,.6),'scale(.86)');
     scroll($('#s3a'),70+Math.sin(u*1.2)*6);
-    badgePop($('#s3badge'),seg(u,1.2,1.7),true);
+    badgePop($('#s3b1'),seg(u,.8,1.3),true);badgePop($('#s3badge'),seg(u,1.6,2.1),true);badgePop($('#s3b3'),seg(u,2.4,2.9),true);
     const out=seg(u,3.8,4.1);$('#s3').style.opacity=1-out;}
   if(t>=T.s4[0]&&t<T.s4[1]){const u=t-T.s4[0];slideUp($('#s4t'),seg(u,0,.6));
     phoneIn($('#s4p1'),seg(u,.1,.9),'rotate(-6deg) scale(.7)');phoneIn($('#s4p2'),seg(u,.25,1.05),'rotate(6deg) scale(.7)');
