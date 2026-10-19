@@ -1,0 +1,334 @@
+﻿id,merchant_id,category,name,price_eur,original_price_eur,description,availability,source
+p001,chez-fhims,Salades,Salade cuite,5.0,,200 g ; exception au tarif standard,unconfirmed,uploaded_menu
+p002,chez-fhims,Salades,Chou blanc mayonnaise,4.0,,200 g,unconfirmed,uploaded_menu
+p003,chez-fhims,Salades,Pommes de terre thon mayo,4.0,,200 g,unconfirmed,uploaded_menu
+p004,chez-fhims,Salades,Pommes de terre harissa,4.0,,200 g,unconfirmed,uploaded_menu
+p005,chez-fhims,Salades,Houmous,4.0,,200 g,unconfirmed,uploaded_menu
+p006,chez-fhims,Salades,Aubergines confites,4.0,,200 g,unconfirmed,uploaded_menu
+p007,chez-fhims,Salades,Salade œuf mayonnaise,4.0,,200 g,unconfirmed,uploaded_menu
+p008,chez-fhims,Salades,Patates douces caramélisées,4.0,,200 g,unconfirmed,uploaded_menu
+p009,chez-fhims,Spécialités,Poisson à la marocaine,8.0,,Par personne,unconfirmed,uploaded_menu
+p010,chez-fhims,Spécialités,Navettes au thon (10),12.0,,,unconfirmed,uploaded_menu
+p011,chez-fhims,Spécialités,Houmous bassah,15.0,,,unconfirmed,uploaded_menu
+p012,chez-fhims,Plats,Viande aux oignons et riz,17.0,,1 personne,unconfirmed,uploaded_menu
+p013,chez-fhims,Plats,Poulet aux olives et pommes de terre,16.0,,1 personne,unconfirmed,uploaded_menu
+p014,chez-fhims,Plats,Formule 4 personnes,95.0,,"6 salades de 300 g au choix, 4 plats et accompagnements, 2 petits fondants",unconfirmed,uploaded_menu
+p015,kosherfc,Menus,6 tenders menu,16.0,,"6 tenders, frites, boisson et 1 sauce au choix",unconfirmed,uploaded_menu
+p016,kosherfc,Menus,Tasty Crousti,14.0,,Plat et boisson au choix,unconfirmed,uploaded_menu
+p017,kosherfc,Menus,Tenders Burger Menu,18.0,,"Burger, frites et boisson au choix",unconfirmed,uploaded_menu
+p018,neshama-bakery,Hallot,Hallah,2.5,,À l’unité,unconfirmed,uploaded_menu
+p019,neshama-bakery,Hallot,Lot de 10 hallot,20.0,,10 pièces,unconfirmed,uploaded_menu
+p020,neshama-bakery,Babkas,Babka chocolat,8.0,,,unconfirmed,uploaded_menu
+p021,neshama-bakery,Babkas,Babka chocolat noisette,10.0,,,unconfirmed,uploaded_menu
+p022,neshama-bakery,Babkas,Babka cannelle,10.0,,,unconfirmed,uploaded_menu
+p023,neshama-bakery,Babkas,Babka pistache,12.0,,,unconfirmed,uploaded_menu
+p024,neshama-bakery,Boulangerie,Brioche chocolat,1.5,,À l’unité,unconfirmed,uploaded_menu
+p025,neshama-bakery,Boulangerie,Mini pizzas x10,10.0,,10 pièces,unconfirmed,uploaded_menu
+p026,neshama-bakery,Boulangerie,Pains navette x10,8.0,,10 pièces,unconfirmed,uploaded_menu
+p027,le-j,Sandwichs,J.1 — Schnitzel classique Le J,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p028,le-j,Sandwichs,J.2 — Parguit classique Le J,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p029,le-j,Sandwichs,J.3 — Burger steak haché,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p030,le-j,Sandwichs,J.4 — Cheese burger steak haché,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p031,le-j,Sandwichs,J.5 — Chicken burger,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p032,le-j,Sandwichs,J.6 — Cheese chicken burger,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p033,le-j,Sandwichs,J.7 — Le J merguez,18.9,,Voir menu pour garnitures,unconfirmed,uploaded_menu
+p034,le-j,Sandwichs,J.8 — Hot Dog,13.0,,Pain hot dog,unconfirmed,uploaded_menu
+p035,le-j,Assiettes,J.9 — Assiette schnitzel / parguit,18.9,,"Garnitures, houmous, tehina",unconfirmed,uploaded_menu
+p036,le-j,Boissons,Coca,2.0,,,unconfirmed,uploaded_menu
+p037,le-j,Boissons,Coca zéro,2.0,,,unconfirmed,uploaded_menu
+p038,le-j,Boissons,Eau,2.0,,,unconfirmed,uploaded_menu
+p039,le-j,Boissons,Fuze tea pêche,2.0,,,unconfirmed,uploaded_menu
+p040,yoriz-tartarel,Sushis,Yoriz Salmon,7.9,,"8 pièces, riz vinaigré, saumon, avocat, sésame, algue nori",unconfirmed,uploaded_menu
+p041,yoriz-tartarel,Sushis,Yoriz tuna,7.9,,"8 pièces, riz vinaigré, thon mayo, avocat, sésame, algue nori",unconfirmed,uploaded_menu
+p042,yoriz-tartarel,Sushis,Salmon splash,4.9,,"4 pièces, saumon, riz vinaigré",unconfirmed,uploaded_menu
+p043,yoriz-tartarel,Tartares,Tartarel Salmon,13.0,,"Riz vinaigré, saumon, avocat, sésame",unconfirmed,uploaded_menu
+p044,yoriz-tartarel,Tartares,Tartarel Tuna,13.0,,"Riz vinaigré, thon mayo, avocat, sésame",unconfirmed,uploaded_menu
+p045,yoriz-tartarel,Boissons,Coca rouge,2.0,,,unconfirmed,uploaded_menu
+p046,yoriz-tartarel,Boissons,Coca zéro,2.0,,,unconfirmed,uploaded_menu
+p047,yoriz-tartarel,Boissons,Ice tea,2.0,,,unconfirmed,uploaded_menu
+p048,yoriz-tartarel,Boissons,Eau,1.0,,,unconfirmed,uploaded_menu
+p049,yoriz-tartarel,Menus,Menu Fernando,21.0,,"1 tartare, 1 california, 1 boisson au choix",unconfirmed,uploaded_menu
+p050,yoriz-tartarel,Menus,Menu Pessoa,18.0,,"1 tartare, 1 boisson, 1 sushi au choix",unconfirmed,uploaded_menu
+p051,koshergo,Promotions,Canette Mos(K)ato Peach,4.5,,"Ancien prix 5,50 €",unconfirmed,uploaded_menu
+p052,koshergo,Promotions,Canette moscato orange,4.5,,"Ancien prix 5,50 €",unconfirmed,uploaded_menu
+p053,koshergo,Promotions,Boutargue Harissa,25.99,,"Ancien prix 29,99 €",unconfirmed,uploaded_menu
+p054,koshergo,Nouveautés,Freedent White,1.99,,,unconfirmed,uploaded_menu
+p055,koshergo,Nouveautés,Veilleuse 72h,3.99,,,unconfirmed,uploaded_menu
+p056,koshergo,Nouveautés,Thon à l’huile,2.76,,,unconfirmed,uploaded_menu
+kgl-001,koshergo-lenny,Confiseries,Haribo Grapefruit,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-002,koshergo-lenny,Confiseries,Haribo Wummis,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-003,koshergo-lenny,Confiseries,Haribo Cola Bottles,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-004,koshergo-lenny,Confiseries,Sour Sticks Pink Limonade 100g,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-005,koshergo-lenny,Confiseries,Sour Bitez,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-006,koshergo-lenny,Confiseries,Sour Sticks Raspberry 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-007,koshergo-lenny,Vin,Sainte Béatrice – Collection Élégance,23.0,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-008,koshergo-lenny,Vin,Mos(K)ato,16.0,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-009,koshergo-lenny,Vin,Genlaire,16.0,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-010,koshergo-lenny,Petit déjeuner,Confiture de framboise,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-011,koshergo-lenny,Snacks salés,Cocktail XXL,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-012,koshergo-lenny,Snacks salés,Saltines Crackers blé complet,4.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-013,koshergo-lenny,Sauces,Harissa Shim’on Ariche,4.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-014,koshergo-lenny,Sauces,Harissa 350g,5.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-015,koshergo-lenny,Sauces,Moutarde de Dijon,4.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-016,koshergo-lenny,Alcool,Arak,38.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-017,koshergo-lenny,Havdalah,L’Hava Havdalah bougie,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-018,koshergo-lenny,Épicerie,Piments grecs,4.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-019,koshergo-lenny,Boissons,Canette Mos(K)ato Lychee,4.5,5.5,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-020,koshergo-lenny,Épicerie,Sésame doré,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-021,koshergo-lenny,Vin,Château Romefort,19.0,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-022,koshergo-lenny,Snacks salés,Cocktail Kelia,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-023,koshergo-lenny,Confiseries,Sour Belts Mix,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-024,koshergo-lenny,Épicerie,Instant Noodle Soup Végétale,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-025,koshergo-lenny,Confiseries,Sour Sticks Berry Mix 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-026,koshergo-lenny,Snacks salés,Breadstick original,3.49,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-027,koshergo-lenny,Sauces,Sauce bolognaise,5.49,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-028,koshergo-lenny,Confiseries,Oodles,0.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-029,koshergo-lenny,Épicerie,Pois chiches,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-030,koshergo-lenny,Confiseries,Sour Sticks Cola 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-031,koshergo-lenny,Sauces,Sauce barbecue,4.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-032,koshergo-lenny,Épicerie,Chapelure dorée 400g,4.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-033,koshergo-lenny,Vaisselle,Cuillères x20,2.79,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-034,koshergo-lenny,Confiseries,Sour Sticks Apple 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-035,koshergo-lenny,Confiseries,Sour Sticks Raspberry 100g,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-036,koshergo-lenny,Épicerie,Feuilles de riz x21,5.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-037,koshergo-lenny,Épicerie,Sésame blanc,2.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-038,koshergo-lenny,Confiseries,Long Taffy Raspberry,1.49,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-039,koshergo-lenny,Sauces,Harissa 460g,7.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-040,koshergo-lenny,Sauces,Harissa tunisienne,3.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-041,koshergo-lenny,Boissons,Canette Mos(K)ato Blueberry,,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-042,koshergo-lenny,Boissons,Canette Mos(K)ato Bellini,4.5,5.5,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-043,koshergo-lenny,Confiseries,Sour Belts Strawberry,3.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-044,koshergo-lenny,Épicerie,Vinaigre balsamique,5.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-045,koshergo-lenny,Confiseries,Sour Sticks Pink Limonade 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-046,koshergo-lenny,Épicerie,Nikitouche,5.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-047,koshergo-lenny,Shabbat,Mini Plata de Chabbat,35.9,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-048,koshergo-lenny,Épicerie,Instant Noodle Soup Beef,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-049,koshergo-lenny,Vaisselle,Barquette ronde x2,1.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-050,koshergo-lenny,Confiseries,Sour Sticks Mix 50g,2.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-051,koshergo-lenny,Vaisselle,Couteaux x20,2.79,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-052,koshergo-lenny,Vin,Roubine – Collection élégance,20.0,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-053,koshergo-lenny,Vaisselle,Barquette petit format x20,5.99,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-054,koshergo-lenny,Vaisselle,Petites assiettes x15,2.49,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-055,koshergo-lenny,Boissons,Canette Moscato Rose,4.5,5.5,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-056,koshergo-lenny,Snacks salés,Saltines Crackers original,4.5,,,unconfirmed,screenshots_IMG_3221_to_3230
+kgl-057,koshergo-lenny,Épicerie,Wraps x6,,,,unconfirmed,screenshots_IMG_3221_to_3230
+new-001,saveurs-shabbat,Salades,Mekbouba,4.0,,300 ml,unconfirmed,uploaded_menu
+new-002,saveurs-shabbat,Salades,Salade d’olives,4.0,,300 ml,unconfirmed,uploaded_menu
+new-003,saveurs-shabbat,Salades,Coleslaw,4.0,,300 ml,unconfirmed,uploaded_menu
+new-004,saveurs-shabbat,Salades,Patates douces caramélisées,4.0,,300 ml,unconfirmed,uploaded_menu
+new-005,saveurs-shabbat,Salades,Hummus,4.0,,300 ml,unconfirmed,uploaded_menu
+new-006,saveurs-shabbat,Salades,Carottes râpées,4.0,,300 ml,unconfirmed,uploaded_menu
+new-007,saveurs-shabbat,Salades,Aubergines frites,4.0,,300 ml,unconfirmed,uploaded_menu
+new-008,saveurs-shabbat,Salades,Aubergines panées,4.0,,300 ml,unconfirmed,uploaded_menu
+new-009,saveurs-shabbat,Plats,Assado caramélisé + riz,16.0,,Par personne,unconfirmed,uploaded_menu
+new-010,saveurs-shabbat,Plats,Poulet aux oignons + riz,14.0,,Par personne,unconfirmed,uploaded_menu
+new-011,maison-metouka,Pâtisseries,Tarte citron meringuée 6/8 personnes,23.0,,,unconfirmed,uploaded_menu
+new-012,maison-metouka,Pâtisseries,Tarte citron meringuée individuel,4.0,,,unconfirmed,uploaded_menu
+new-013,maison-metouka,Pâtisseries,Tarte chocolat cacahuètes et caramel 6/8 personnes,26.0,,,unconfirmed,uploaded_menu
+new-014,maison-metouka,Pâtisseries,Tarte chocolat cacahuètes et caramel individuel,5.0,,,unconfirmed,uploaded_menu
+new-015,maison-metouka,Pâtisseries,Fraisier 6/8 personnes,26.0,,,unconfirmed,uploaded_menu
+new-016,maison-metouka,Pâtisseries,Fraisier individuel,5.0,,,unconfirmed,uploaded_menu
+new-017,maison-metouka,Douceurs d’Orient,Cigares au miel,7.0,,5 pièces ; avec ou sans fleur d’oranger,unconfirmed,uploaded_menu
+new-018,koshergo,Épicerie,Wraps x6,3.5,,,unconfirmed,uploaded_menu
+new-019,koshergo,Épicerie,Pretzel sésame,2.49,,,unconfirmed,uploaded_menu
+new-020,koshergo,Épicerie,Miel de datte,8.49,,,unconfirmed,uploaded_menu
+new-021,koshergo,Épicerie,Crème d’harissa extra forte,4.99,,,unconfirmed,uploaded_menu
+new-022,koshergo,Épicerie,Langue d’oiseau,2.99,,,unconfirmed,uploaded_menu
+new-023,koshergo,Épicerie,Petit beurre,4.5,,,unconfirmed,uploaded_menu
+new-024,koshergo,Épicerie,Barquette moyenne x10,5.99,,,unconfirmed,uploaded_menu
+new-025,koshergo,Épicerie,Cornichon,4.5,,,unconfirmed,uploaded_menu
+new-026,koshergo,Épicerie,Oodles Apple,0.99,,,unconfirmed,uploaded_menu
+new-027,koshergo,Épicerie,Ventrèche de thon 300g,25.99,,,unconfirmed,uploaded_menu
+new-028,koshergo,Épicerie,Ravier x6,1.99,,,unconfirmed,uploaded_menu
+new-029,koshergo,Épicerie,Oignons crispy 500g,8.49,,,unconfirmed,uploaded_menu
+new-030,koshergo,Épicerie,Gobelets x50,3.49,,,unconfirmed,uploaded_menu
+new-031,koshergo,Épicerie,Long taffy mix color,1.49,,,unconfirmed,uploaded_menu
+new-032,koshergo,Épicerie,Filets d’anchoix 110g,18.99,,,unconfirmed,uploaded_menu
+new-033,koshergo,Épicerie,Barquette petit format x4,1.99,,,unconfirmed,uploaded_menu
+new-034,koshergo,Épicerie,Boudoir,5.49,,,unconfirmed,uploaded_menu
+new-035,koshergo,Épicerie,Moutarde 1kg,9.99,,,unconfirmed,uploaded_menu
+new-036,koshergo,Épicerie,Lasso strawberry,3.5,,,unconfirmed,uploaded_menu
+new-037,koshergo,Épicerie,Haricot blanc,2.99,,,unconfirmed,uploaded_menu
+new-038,koshergo,Épicerie,Pretzel sel de mer,2.49,,,unconfirmed,uploaded_menu
+new-039,koshergo,Épicerie,Sour Belts Cola,3.5,,,unconfirmed,uploaded_menu
+new-040,koshergo,Épicerie,Sour Sticks Strawberry 50g,2.5,,,unconfirmed,uploaded_menu
+new-041,koshergo,Épicerie,Purée,5.99,,,unconfirmed,uploaded_menu
+new-042,koshergo,Épicerie,Nappe plastique 2m40 x 1m35,2.0,,,unconfirmed,uploaded_menu
+new-043,koshergo,Épicerie,Breadstick à l’oignon,3.49,,,unconfirmed,uploaded_menu
+new-044,koshergo,Épicerie,Bessamim,3.0,,,unconfirmed,uploaded_menu
+new-045,koshergo,Épicerie,Panure jaune,5.99,,,unconfirmed,uploaded_menu
+new-046,koshergo,Épicerie,Grandes assiettes x10,1.99,,,unconfirmed,uploaded_menu
+new-047,koshergo,Épicerie,Moutarde au miel,4.99,,,unconfirmed,uploaded_menu
+new-048,koshergo,Épicerie,Sour Sticks Cherry 50g,2.5,,,unconfirmed,uploaded_menu
+new-049,koshergo,Épicerie,Boulgour,2.99,,,unconfirmed,uploaded_menu
+new-050,koshergo,Épicerie,Fourchettes x20,2.79,,,unconfirmed,uploaded_menu
+new-051,koshergo,Épicerie,Boutargue râpée,12.99,,,unconfirmed,uploaded_menu
+new-052,koshergo,Épicerie,Instant Noodle Soup Chicken,2.5,,,unconfirmed,uploaded_menu
+new-053,koshergo,Épicerie,Chapelure dorée 800g,8.99,,,unconfirmed,uploaded_menu
+new-054,koshergo,Épicerie,Onions Crispy,3.99,,,unconfirmed,uploaded_menu
+new-055,koshergo,Épicerie,Sour Sticks Apple 100g,3.5,,,unconfirmed,uploaded_menu
+add-001,levfood,Formules,Menu classique,15.0,,Poké + boisson,unconfirmed,menu_2026-10-11
+add-002,levfood,Formules,Menu gourmand,17.0,,Poké + boisson + dessert,unconfirmed,menu_2026-10-11
+add-003,levfood,Formules,Menu XL,22.0,,Entrée + poké + boisson,unconfirmed,menu_2026-10-11
+add-004,levfood,Entrées,Rouleaux de printemps,9.0,,"Salade, vermicelle de riz, carotte, concombre, avocat, ciboulette, menthe",unconfirmed,menu_2026-10-11
+add-005,levfood,Entrées,Nems poulet,9.0,,"Poulet, carotte, chou blanc, champignon, vermicelle de riz, oignon",unconfirmed,menu_2026-10-11
+add-006,levfood,Poké bowl,Salmon,14.0,,"Saumon cru mariné, avocat, chou rouge, edamame, mangue",unconfirmed,menu_2026-10-11
+add-007,levfood,Poké bowl,Tuna,14.0,,"Thon mayo, avocat, radis, concombre, patate douce rôtie",unconfirmed,menu_2026-10-11
+add-008,levfood,Poké bowl,Yakitori saumon,14.0,,"Brochettes saumon cuit, tomate cerise, avocat, patate douce rôtie, chou rouge",unconfirmed,menu_2026-10-11
+add-009,levfood,Desserts,Cookie maison,3.0,,,unconfirmed,menu_2026-10-11
+add-010,levfood,Desserts,Fondant au chocolat maison,3.0,,,unconfirmed,menu_2026-10-11
+add-011,okaffe,Petit déjeuner,Pancake,4.0,,,unconfirmed,menu_2026-10-11
+add-012,okaffe,Petit déjeuner,Gaufre,4.0,,,unconfirmed,menu_2026-10-11
+add-013,okaffe,Petit déjeuner,Crêpe,4.0,,,unconfirmed,menu_2026-10-11
+add-014,okaffe,Petit déjeuner,Brioche perdue,5.0,,,unconfirmed,menu_2026-10-11
+add-015,okaffe,Petit déjeuner,Panini Nutella,6.0,,,unconfirmed,menu_2026-10-11
+add-016,okaffe,Petit déjeuner,Tartine de baguette,6.0,,,unconfirmed,menu_2026-10-11
+add-017,okaffe,Petit déjeuner,Oeuf au plat,4.0,,,unconfirmed,menu_2026-10-11
+add-018,okaffe,Petit déjeuner,Omelette / brouillé,4.0,,,unconfirmed,menu_2026-10-11
+add-019,okaffe,Toast & Panini,Avocado toast,8.0,,"Avocat, oeuf, oignon rouge, tomate",unconfirmed,menu_2026-10-11
+add-020,okaffe,Toast & Panini,Salmon toast,11.0,,"Crème avocat, saumon fumé, oeuf",unconfirmed,menu_2026-10-11
+add-021,okaffe,Toast & Panini,Guacamole toast,13.0,,"Crème avocat, burrata, tomate cerise",unconfirmed,menu_2026-10-11
+add-022,okaffe,Toast & Panini,Panini rustico,9.0,,"Baguette/bagel toasté, mozza, pesto, tomate",unconfirmed,menu_2026-10-11
+add-023,okaffe,Toast & Panini,Panini tuna,11.0,,"Baguette/bagel, mozza, thon, tomate",unconfirmed,menu_2026-10-11
+add-024,okaffe,Toast & Panini,Panini salmon,12.0,,"Baguette/bagel, mozza, saumon, roquette",unconfirmed,menu_2026-10-11
+add-025,okaffe,Entrées & Plats,French fries,4.0,,,unconfirmed,menu_2026-10-11
+add-026,okaffe,Entrées & Plats,Camembert rôti,13.0,,,unconfirmed,menu_2026-10-11
+add-027,okaffe,Entrées & Plats,Salmon & fries,14.0,,,unconfirmed,menu_2026-10-11
+add-028,okaffe,Entrées & Plats,Fish burger,15.0,,,unconfirmed,menu_2026-10-11
+add-029,okaffe,Salades,Caprèze,13.0,,"Roquette, focaccia, tomate, mozza, pesto",unconfirmed,menu_2026-10-11
+add-030,okaffe,Salades,César,15.0,,"Iceberg, saumon grillé, focaccia, tomate cerise",unconfirmed,menu_2026-10-11
+add-031,okaffe,Salades,Burrata,16.0,,"Roquette, burrata, sauce balsamique, tomate cerise",unconfirmed,menu_2026-10-11
+add-032,okaffe,Pasta,Arrabiata,11.0,,,unconfirmed,menu_2026-10-11
+add-033,okaffe,Pasta,Rosé,12.0,,,unconfirmed,menu_2026-10-11
+add-034,okaffe,Pasta,Pesto,12.0,,,unconfirmed,menu_2026-10-11
+add-035,okaffe,Pasta,Champignon,14.0,,,unconfirmed,menu_2026-10-11
+add-036,okaffe,Pasta,Saumon,15.0,,,unconfirmed,menu_2026-10-11
+add-037,okaffe,Pasta,Truffe,17.0,,,unconfirmed,menu_2026-10-11
+add-038,okaffe,Pizza,Marguarita,12.0,,,unconfirmed,menu_2026-10-11
+add-039,okaffe,Pizza,Italiana,13.0,,,unconfirmed,menu_2026-10-11
+add-040,okaffe,Pizza,Champignon,14.0,,,unconfirmed,menu_2026-10-11
+add-041,okaffe,Pizza,Salmon,15.0,,,unconfirmed,menu_2026-10-11
+add-042,okaffe,Pizza,Burrata,16.0,,,unconfirmed,menu_2026-10-11
+add-043,okaffe,Pizza,Truffe,17.0,,,unconfirmed,menu_2026-10-11
+add-044,okaffe,Boissons,Eau minérale,1.5,,,unconfirmed,menu_2026-10-11
+add-045,okaffe,Boissons,Eau pétillante,1.5,,,unconfirmed,menu_2026-10-11
+add-046,okaffe,Boissons,Soda,2.5,,,unconfirmed,menu_2026-10-11
+add-047,okaffe,Boissons,Jus d’orange,3.0,,,unconfirmed,menu_2026-10-11
+add-048,okaffe,Boissons,Jus de pomme,3.0,,,unconfirmed,menu_2026-10-11
+add-049,okaffe,Boissons,Espresso,1.5,,,unconfirmed,menu_2026-10-11
+add-050,okaffe,Boissons,Cappuccino,3.5,,,unconfirmed,menu_2026-10-11
+add-051,okaffe,Boissons,Café latte,3.5,,,unconfirmed,menu_2026-10-11
+add-052,okaffe,Boissons,Chocolat latte,3.5,,,unconfirmed,menu_2026-10-11
+new26-001,okaffe,Boucherie,Noix d’entrecôte,39.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-002,okaffe,Boucherie,Jarret de Boeuf,30.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-003,okaffe,Boucherie,Parguit de Poulet,21.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-004,okaffe,Boucherie,Roti de Boeuf,33.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-005,okaffe,Boucherie,Viande hachée,24.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-006,okaffe,Boucherie,Cuisse entière de Poulet,13.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-007,okaffe,Boucherie,Paleron de Boeuf,32.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-008,okaffe,Boucherie,Steak Haché,19.0,,800 g,unconfirmed,captures_okaffe_2026-10-11
+new26-009,okaffe,Boucherie,Blanc de Poulet,18.9,,kg,unconfirmed,captures_okaffe_2026-10-11
+new26-010,okaffe,Boucherie,Pastrami poulet fumé,4.5,,80 g,unconfirmed,captures_okaffe_2026-10-11
+new26-011,okaffe,Boucherie,Pastrami poulet grillé,4.5,,80 g,unconfirmed,captures_okaffe_2026-10-11
+new26-012,okaffe,Épicerie sucrée,Palmines,3.0,,100 g,unconfirmed,captures_okaffe_2026-10-11
+new26-013,okaffe,Épicerie sucrée,Chunky cookies,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-014,okaffe,Épicerie sucrée,Chocolat baking,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-015,okaffe,Épicerie sucrée,Delinut milky,5.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-016,okaffe,Épicerie sucrée,Delinut parve,5.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-017,okaffe,Épicerie sucrée,Nappage chocolat,7.0,,700 g,unconfirmed,captures_okaffe_2026-10-11
+new26-018,okaffe,Épicerie sucrée,Cookies chocolat,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-019,okaffe,Épicerie sucrée,Napo vanille,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-020,okaffe,Épicerie sucrée,Cookies nougatine,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-021,okaffe,Épicerie sucrée,Napo chocolat,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-022,okaffe,Fromages,Parmesan râpé,5.0,,100 g,unconfirmed,captures_okaffe_2026-10-11
+new26-023,okaffe,Fromages,Mozzarella Pain,9.5,,400 g,unconfirmed,captures_okaffe_2026-10-11
+new26-024,okaffe,Fromages,Emmental râpé,4.5,,200 g,unconfirmed,captures_okaffe_2026-10-11
+new26-025,okaffe,Fromages,Gourmand en tranches,3.8,,150 g,unconfirmed,captures_okaffe_2026-10-11
+new26-026,okaffe,Fromages,Mazdamer en Tranche,3.8,,150 g,unconfirmed,captures_okaffe_2026-10-11
+new26-027,okaffe,Fromages,Crème fraîche,3.8,,20 cl,unconfirmed,captures_okaffe_2026-10-11
+new26-028,okaffe,Fromages,Mozzarella Boule,3.8,,200 g,unconfirmed,captures_okaffe_2026-10-11
+new26-029,okaffe,Fromages,Burrata,6.5,,125 g,unconfirmed,captures_okaffe_2026-10-11
+new26-030,okaffe,Épicerie salée,Saltines Crackers blé complet,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-031,okaffe,Épicerie salée,Thon à l’huile,2.7,,,unconfirmed,captures_okaffe_2026-10-11
+new26-032,okaffe,Épicerie salée,Thon MELIS,2.7,,160 g,unconfirmed,captures_okaffe_2026-10-11
+new26-033,okaffe,Épicerie salée,Feuille de brick,2.2,,,unconfirmed,captures_okaffe_2026-10-11
+new26-034,okaffe,Épicerie salée,Pâte feuilleté,3.5,,250 g,unconfirmed,captures_okaffe_2026-10-11
+new26-035,okaffe,Épicerie salée,Poivrons rouge,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-036,okaffe,Épicerie salée,Thon huile,8.0,,800 g,unconfirmed,captures_okaffe_2026-10-11
+new26-037,okaffe,Épicerie salée,Thon à l’eau,8.0,,800 g,unconfirmed,captures_okaffe_2026-10-11
+new26-038,okaffe,Épicerie salée,Mayonnaise liel,8.0,,860 g,unconfirmed,captures_okaffe_2026-10-11
+new26-039,okaffe,Épicerie salée,Crostini romarin,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-040,okaffe,Épicerie salée,Focacci,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-041,okaffe,Épicerie salée,Crackers mix,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-042,okaffe,Épicerie salée,Melba toast,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-043,okaffe,Épicerie salée,Crackers corners,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-044,okaffe,Épicerie salée,Bissli Pizza,1.8,,,unconfirmed,captures_okaffe_2026-10-11
+new26-045,okaffe,Épicerie salée,Kubiot Poulet,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-046,okaffe,Épicerie salée,Purée,5.0,,500 g,unconfirmed,captures_okaffe_2026-10-11
+new26-047,okaffe,Épicerie salée,Chapelure,5.5,,800 g,unconfirmed,captures_okaffe_2026-10-11
+new26-048,okaffe,Épicerie salée,Nouille instantané Boeuf,2.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-049,okaffe,Épicerie salée,Nikitouche ariche,5.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-050,okaffe,Épicerie salée,Gruau de blé,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-051,okaffe,Épicerie salée,Pain burger,3.7,,,unconfirmed,captures_okaffe_2026-10-11
+new26-052,okaffe,Épicerie salée,Tortillas,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-053,okaffe,Épicerie salée,Nouille Instantanée Poulet,2.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-054,okaffe,Épicerie salée,Bisli Barbecue,1.8,,,unconfirmed,captures_okaffe_2026-10-11
+new26-055,okaffe,Épicerie salée,Kubiot Viande,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-056,okaffe,Sauces,Harissa Cap Bon,2.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-057,okaffe,Sauces,Moutarde de Dijon,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-058,okaffe,Sauces,Crème à fouetter,4.5,,500 ml,unconfirmed,captures_okaffe_2026-10-11
+new26-059,okaffe,Sauces,Vinaigrette nature,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-060,okaffe,Sauces,Sauce soja douce,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-061,okaffe,Sauces,Sauce chili,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-062,okaffe,Sauces,Crème balsamique,6.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-063,okaffe,Sauces,Sauce Pesto,7.9,,550 g,unconfirmed,captures_okaffe_2026-10-11
+new26-064,okaffe,Sauces,Pesto rosso,4.5,,190 g,unconfirmed,captures_okaffe_2026-10-11
+new26-065,okaffe,Sauces,Tahini sauce,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-066,okaffe,Sauces,Sauce Tartare,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-067,okaffe,Sauces,Vinaigrette shaker,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-068,okaffe,Sauces,Sauce chinoise,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-069,okaffe,Sauces,Sirop de dattes,7.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-070,okaffe,Sauces,Pkaila ariche,12.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-071,okaffe,Sauces,Sauce à la truffe,13.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-072,okaffe,Sauces,Sauce Sucrée Yello,5.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-073,okaffe,Sauces,Sauce Zéro Yello,5.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-074,okaffe,Sauces,Sauce Salée Yello,4.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-075,okaffe,Bonbons,Haribo Peaches,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-076,okaffe,Bonbons,Haribo Stelly Jellies,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-077,okaffe,Bonbons,Haribo Cherries,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-078,okaffe,Bonbons,Sour Sticks Cola 50g,2.2,,,unconfirmed,captures_okaffe_2026-10-11
+new26-079,okaffe,Bonbons,Sour Sticks Strawberry 50g,2.2,,,unconfirmed,captures_okaffe_2026-10-11
+new26-080,okaffe,Bonbons,Sour Sticks Multi 50g,2.2,,,unconfirmed,captures_okaffe_2026-10-11
+new26-081,okaffe,Bonbons,Candy planet kroko,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-082,okaffe,Bonbons,Candy planet fraisette,3.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-083,okaffe,Bonbons,Fini sour worms,2.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-084,okaffe,Bonbons,Fini sour cola,2.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-085,okaffe,Boissons et vins,Lait Makabi 1L,1.8,,1 L,unconfirmed,captures_okaffe_2026-10-11
+new26-086,okaffe,Boissons et vins,Boukha bokobsa,30.9,,70 cl,unconfirmed,captures_okaffe_2026-10-11
+new26-087,okaffe,Boissons et vins,Phénix anisette,27.9,,70 cl,unconfirmed,captures_okaffe_2026-10-11
+new26-088,okaffe,Boissons et vins,Château montaud rosé,16.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-089,okaffe,Boissons et vins,Vin Louis Blanc rosé,9.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-090,okaffe,Boissons et vins,Vin Hermon rouge,16.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-091,okaffe,Boissons et vins,Vin Louis Blanc rouge,9.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-092,okaffe,Boissons et vins,Jus de raisin,3.5,,,unconfirmed,captures_okaffe_2026-10-11
+new26-093,okaffe,Shabbat et maison,Grande Plata de Chabbat,39.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-094,okaffe,Shabbat et maison,100 Bols Ovales,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-095,okaffe,Shabbat et maison,100 Couteaux,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-096,okaffe,Shabbat et maison,100 Fourchettes Plastiques,4.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-097,okaffe,Shabbat et maison,100 Assiettes Plastiques,8.0,,,unconfirmed,captures_okaffe_2026-10-11
+new26-098,okaffe,Shabbat et maison,6 Nappes Transparentes,3.8,,,unconfirmed,captures_okaffe_2026-10-11
+new26-099,chabad-porto,Restaurant — menu du midi,Halla Schnitzel bien garnie + boisson,10.0,,"Formule cafétéria, menu du jour",unconfirmed,captures_chabad_2026-10-11
+new26-100,chabad-porto,Épicerie — viandes,Tomahawk,39.0,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-101,chabad-porto,Épicerie — viandes,Entrecôte premium,33.0,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-102,chabad-porto,Épicerie — viandes,Entrecôte,32.0,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-103,chabad-porto,Épicerie — viandes,Viande hachée,22.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-104,chabad-porto,Épicerie — viandes,Bourguignon,22.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-105,chabad-porto,Épicerie — viandes,Ailes de poulet,9.0,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-106,chabad-porto,Épicerie — viandes,Cuisse de poulet,12.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-107,chabad-porto,Épicerie — viandes,Haut de cuisse,12.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-108,chabad-porto,Épicerie — viandes,Blanc de poulet,15.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-109,chabad-porto,Épicerie — viandes,Parguit,17.5,,kg,unconfirmed,captures_chabad_2026-10-11
+new26-110,chabad-porto,Épicerie — boissons,Jus de raisin,4.0,,,unconfirmed,captures_chabad_2026-10-11
+new26-111,chabad-porto,Épicerie — boissons,Moscato de Blanc,10.0,,,unconfirmed,captures_chabad_2026-10-11
+new26-112,chabad-porto,Épicerie — boissons,Moscato Rosé,10.0,,,unconfirmed,captures_chabad_2026-10-11
+new26-113,chabad-porto,Épicerie — boissons,Boukha 70cl,29.5,,,unconfirmed,captures_chabad_2026-10-11

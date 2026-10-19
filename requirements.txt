@@ -1,0 +1,4 @@
+cryptography>=44,<47
+certifi>=2025.1.31
+# Optional: Web Push for the professional spaces (without it, foreground notifications only, declared on the CEO screen).
+pywebpush>=2.0,<3

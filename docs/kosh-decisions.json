@@ -1,0 +1,2291 @@
+{
+  "version": "2026-10-14",
+  "count": 285,
+  "counts_original": {
+    "keep": 238,
+    "modify": 28,
+    "drop": 19
+  },
+  "decisions": [
+    {
+      "id": "A01",
+      "original_feature": "Trois espaces distincts : restaurateur, CEO et livreur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Trois espaces distincts : restaurateur, CEO et livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A02",
+      "original_feature": "Connexion individuelle par adresse e-mail et mot de passe.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Connexion individuelle par adresse e-mail et mot de passe.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A03",
+      "original_feature": "Création des comptes professionnels réservée aux CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Création des comptes professionnels réservée aux CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A04",
+      "original_feature": "Accès restaurateur limité à son établissement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accès restaurateur limité à son établissement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A05",
+      "original_feature": "Accès CEO à l’ensemble des établissements et opérations.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accès CEO à l’ensemble des établissements et opérations.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A06",
+      "original_feature": "Accès livreur aux offres de toutes les enseignes, puis aux détails des courses acceptées.",
+      "original_decision": "modify",
+      "original_note": "ils ont acces si les ceo ont activé son service",
+      "effective_requirement": "Accès aux offres de toutes les enseignes uniquement avec compte livreur actif ET service ouvert par un CEO pour la tournée. Accès aux détails privés des seules parts acceptées. Fermeture du service : aucune nouvelle acceptation, mais terminer les parts déjà acceptées reste possible.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A07",
+      "original_feature": "Connexions des trois espaces indépendantes et simultanées dans le même navigateur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Connexions des trois espaces indépendantes et simultanées dans le même navigateur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A08",
+      "original_feature": "Option « Rester connecté pendant 30 jours », conservée après fermeture et réouverture.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Option « Rester connecté pendant 30 jours », conservée après fermeture et réouverture.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A09",
+      "original_feature": "Déconnexion limitée à l’espace choisi.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Déconnexion limitée à l’espace choisi.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A10",
+      "original_feature": "Changement de son propre mot de passe, avec vérification du mot de passe actuel et confirmation du nouveau.",
+      "original_decision": "modify",
+      "original_note": "le mot de passe doit automatiquement etre changé et visible chez les ceo",
+      "effective_requirement": "Changer son mot de passe avec contrôle du mot de passe actuel et confirmation du nouveau. Actualiser automatiquement le coffre chiffré CEO avec la nouvelle valeur ; elle devient consultable uniquement par les CEO autorisés. Ne pas afficher un ancien mot de passe comme actuel.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A11",
+      "original_feature": "Fermeture des anciennes sessions après changement ou réinitialisation du mot de passe.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Fermeture des anciennes sessions après changement ou réinitialisation du mot de passe.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A12",
+      "original_feature": "Formulaires de connexion stables pendant la saisie, compatibles avec le remplissage automatique et la touche Entrée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Formulaires de connexion stables pendant la saisie, compatibles avec le remplissage automatique et la touche Entrée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A13",
+      "original_feature": "Conservation des données dans une base partagée entre les appareils.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conservation des données dans une base partagée entre les appareils.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A14",
+      "original_feature": "Installation de chaque espace comme application web sur l’écran d’accueil.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Installation de chaque espace comme application web sur l’écran d’accueil.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A15",
+      "original_feature": "Navigation adaptée au rôle, avec fonctions regroupées et panneaux dépliables.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Navigation propre au rôle, fonctions regroupées et panneaux dépliables. Retirer du menu CEO la section Coûts devenue sans objet.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A16",
+      "original_feature": "Interface adaptée à l’iPhone et aux écrans plus grands, notamment les Mac des restaurateurs.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Interface adaptée à l’iPhone et aux écrans plus grands, notamment les Mac des restaurateurs.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A17",
+      "original_feature": "Harmonisation des champs, boutons, dimensions et typographies.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Harmonisation des champs, boutons, dimensions et typographies.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A18",
+      "original_feature": "Signalement d’une connexion interrompue et des données potentiellement anciennes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Signalement d’une connexion interrompue et des données potentiellement anciennes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A19",
+      "original_feature": "Retrait immédiat des informations privées lorsque la session expire.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Retrait immédiat des informations privées lorsque la session expire.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "A20",
+      "original_feature": "Activation des notifications sur l’appareil, selon les permissions et la configuration disponibles.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Activation des notifications sur l’appareil, selon les permissions et la configuration disponibles.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R01",
+      "original_feature": "Voir les commandes de son établissement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les commandes de son établissement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R02",
+      "original_feature": "Actualiser automatiquement les commandes toutes les 10 secondes lorsque l’application est active.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Actualiser automatiquement les commandes toutes les 10 secondes lorsque l’application est active.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R03",
+      "original_feature": "Actualiser immédiatement au retour dans l’application.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Actualiser immédiatement au retour dans l’application.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R04",
+      "original_feature": "Actualiser sans effacer les champs en cours de saisie.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Actualiser sans effacer les champs en cours de saisie.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R05",
+      "original_feature": "Filtrer les commandes : en cours, paiement, prêtes, archives ou toutes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Filtrer les commandes : en cours, paiement, prêtes, archives ou toutes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R06",
+      "original_feature": "Rechercher une commande par référence ou nom du client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Rechercher une commande par référence ou nom du client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R07",
+      "original_feature": "Voir le nombre de commandes actives.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir le nombre de commandes actives.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R08",
+      "original_feature": "Mettre en priorité les demandes d’annulation, paiements déclarés et attentes prolongées de livreur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Mettre en priorité les demandes d’annulation, paiements déclarés et attentes prolongées de livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R09",
+      "original_feature": "Ouvrir le détail d’une commande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir le détail d’une commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R10",
+      "original_feature": "Afficher une commande en grand dans un mode cuisine.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Afficher une commande en grand dans un mode cuisine.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R11",
+      "original_feature": "Afficher clairement les quantités, produits, options, suppléments et instructions.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Afficher clairement les quantités, produits, options, suppléments et instructions.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R12",
+      "original_feature": "Regrouper les lignes identiques sans mélanger les produits ayant des options ou instructions différentes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Regrouper les lignes identiques sans mélanger les produits ayant des options ou instructions différentes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R13",
+      "original_feature": "Détailler les produits inclus dans un menu composé.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Détailler les produits inclus dans un menu composé.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R14",
+      "original_feature": "Afficher les cadeaux promotionnels à préparer.",
+      "original_decision": "modify",
+      "original_note": "code cadeaux et promotionnel dans la meme fonction",
+      "effective_requirement": "Afficher les cadeaux à préparer dans la commande ; codes cadeaux et codes promotionnels sont gérés dans une seule fonction, conformément à R69.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R15",
+      "original_feature": "Consulter le nom, téléphone, adresse, créneau et mode de réception du client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter le nom, téléphone, adresse, créneau et mode de réception du client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R16",
+      "original_feature": "Appeler le client depuis sa commande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Appeler le client depuis sa commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R17",
+      "original_feature": "Distinguer un paiement attendu, déclaré par le client et validé par le restaurant.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Distinguer un paiement attendu, déclaré par le client et validé par le restaurant.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R18",
+      "original_feature": "Vérifier manuellement le paiement reçu sur Revolut.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Vérifier manuellement le paiement reçu sur Revolut.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R19",
+      "original_feature": "Confirmer le paiement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer le paiement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R20",
+      "original_feature": "Ouvrir automatiquement le ticket après validation du paiement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir automatiquement le ticket après validation du paiement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R21",
+      "original_feature": "Mettre les tickets en attente de consultation lorsque plusieurs paiements sont validés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Mettre les tickets en attente de consultation lorsque plusieurs paiements sont validés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R22",
+      "original_feature": "Revoir et imprimer le ticket depuis la commande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Revoir et imprimer le ticket depuis la commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R23",
+      "original_feature": "Déclarer le nombre de sacs ou colis, de 1 à 5, indépendamment du nombre de produits.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Déclarer un nombre entier positif de sacs pour une commande, sans plafond métier fixe. Au-delà de la capacité d'un livreur, proposer les sacs restants à d'autres livreurs actifs. Ne jamais assimiler sacs et articles.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R24",
+      "original_feature": "Modifier le nombre de sacs avant la collecte, avec contrôle de la capacité du livreur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Modifier le nombre de sacs avant leur collecte en revalidant les affectations et capacités. Ne pas retirer silencieusement des sacs déjà acceptés ou collectés. Les cas de changement d'une commande partiellement collectée nécessitent une règle explicite.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R25",
+      "original_feature": "Commencer la préparation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Commencer la préparation.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R26",
+      "original_feature": "Indiquer que la commande est prête.",
+      "original_decision": "modify",
+      "original_note": "envoie automatiquement une notification au livreur qui a accepté la commande",
+      "effective_requirement": "Marquer la commande prête et notifier automatiquement les livreurs ayant accepté une part. Un livreur acceptant après cet événement doit voir immédiatement l'état prêt.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R27",
+      "original_feature": "Confirmer la remise au livreur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer la remise des sacs attribués au livreur concerné ; une remise partielle ne marque pas tous les sacs comme collectés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R28",
+      "original_feature": "Confirmer la remise au client pour un retrait.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer la remise au client pour un retrait.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R29",
+      "original_feature": "Confirmer la remise au coursier Uber pour une commande Uber Colis.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer la remise au coursier Uber pour une commande Uber Colis.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R30",
+      "original_feature": "Confirmer la livraison effectuée depuis l’espace cuisine.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver la confirmation de livraison depuis la cuisine, en respectant les parts : la commande entière n'est livrée que lorsque tous les sacs le sont.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R31",
+      "original_feature": "Publier un message visible par le client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Publier un message visible par le client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R32",
+      "original_feature": "Annoncer manuellement un délai de collecte ou de livraison.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Annoncer manuellement un délai de collecte ou de livraison.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R33",
+      "original_feature": "Voir l’heure estimée à laquelle la préparation sera terminée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir l’heure estimée à laquelle la préparation sera terminée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R34",
+      "original_feature": "Régler le temps de préparation initial : 15 minutes par défaut, modifiable entre 1 et 180 minutes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Temps initial de préparation de 15 minutes par défaut, réglable par le restaurant entre 1 et 180 minutes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R35",
+      "original_feature": "Remplacer progressivement ce délai initial par la médiane des 20 dernières préparations valides mesurées.",
+      "original_decision": "modify",
+      "original_note": "le restaurateur doit la valider avant",
+      "effective_requirement": "Mesurer les vingt premières préparations valides, proposer leur médiane et attendre la validation du restaurant. Acceptation : remplacer le délai actuel par la valeur proposée. Refus : conserver le délai actuel, 15 minutes s'il n'a pas été modifié. Ne pas remplacer automatiquement par une médiane glissante des vingt dernières commandes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R36",
+      "original_feature": "Voir le livreur associé à la commande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir chaque livreur et sa part de sacs associés à la commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R37",
+      "original_feature": "Consulter sa position sur une carte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Carte de suivi des livreurs participant aux commandes de son établissement, sans accès aux autres clients ni à leur tournée privée complète.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R38",
+      "original_feature": "Voir son arrivée estimée au restaurant.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir l'arrivée estimée de chaque livreur chargé de collecter des sacs de la commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R39",
+      "original_feature": "Voir la précision et la date de la dernière position reçue.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir la précision et la date de la dernière position reçue.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R40",
+      "original_feature": "Distinguer un GPS récent, ancien ou interrompu.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Distinguer un GPS récent, ancien ou interrompu.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R41",
+      "original_feature": "Voir une alerte lorsqu’aucun livreur n’a accepté après 5 minutes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir une alerte lorsqu’aucun livreur n’a accepté après 5 minutes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R42",
+      "original_feature": "Voir une alerte renforcée après 15 minutes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir une alerte renforcée après 15 minutes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R43",
+      "original_feature": "Proposer au client de remplacer la livraison par un retrait, en attendant son accord.",
+      "original_decision": "modify",
+      "original_note": "si aucune solution apres 15 mn et doit etre demandé manuellement par le restaurateur",
+      "effective_requirement": "Après quinze minutes sans solution de livraison, le restaurant peut envoyer manuellement une proposition de retrait. Attendre l'accord client. Ne pas déclencher automatiquement l'envoi ni la conversion.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R44",
+      "original_feature": "Accepter une demande d’annulation du client après paiement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accepter une demande d’annulation du client après paiement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R45",
+      "original_feature": "Refuser cette demande avec une réponse motivée.",
+      "original_decision": "modify",
+      "original_note": "pas motivé juste : le restaurant a malheureusement decliné votre annulation vous pouvez adresser une reclamation.",
+      "effective_requirement": "Refuser la demande d'annulation sans motif libre obligatoire. Envoyer le message standard : « Le restaurant a malheureusement décliné votre annulation. Vous pouvez adresser une réclamation. »",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R46",
+      "original_feature": "Annuler une commande avec un motif transmis au client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Annuler une commande avec un motif transmis au client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R47",
+      "original_feature": "Restituer automatiquement les stocks à l’annulation, y compris après le début de préparation : c’était la règle que tu avais choisie.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Restituer automatiquement les stocks à l’annulation, y compris après le début de préparation : c’était la règle que tu avais choisie.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R48",
+      "original_feature": "Identifier les remboursements à effectuer manuellement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Identifier les remboursements à effectuer manuellement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R49",
+      "original_feature": "Déclarer qu’un remboursement a été effectué.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Déclarer qu’un remboursement a été effectué.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R50",
+      "original_feature": "Lire les réclamations du client.",
+      "original_decision": "modify",
+      "original_note": "que pour son etablissement",
+      "effective_requirement": "Lire uniquement les réclamations concernant son propre établissement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R51",
+      "original_feature": "Répondre aux réclamations.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Répondre aux réclamations.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R52",
+      "original_feature": "Voir la confirmation de réception donnée par le client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir la confirmation de réception donnée par le client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R53",
+      "original_feature": "Ajouter un produit.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ajouter un produit.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R54",
+      "original_feature": "Modifier un produit.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Modifier un produit.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R55",
+      "original_feature": "Supprimer un produit de la carte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Supprimer un produit de la carte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R56",
+      "original_feature": "Gérer son nom, description, prix, catégorie et photo.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer son nom, description, prix, catégorie et photo.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R57",
+      "original_feature": "Gérer ses options et suppléments.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer ses options et suppléments.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R58",
+      "original_feature": "Gérer les choix obligatoires.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer les choix obligatoires.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R59",
+      "original_feature": "Activer ou désactiver la disponibilité d’un produit.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Activer ou désactiver la disponibilité d’un produit.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R60",
+      "original_feature": "Régler les quantités en stock.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Régler les quantités en stock.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R61",
+      "original_feature": "Décompter les stocks réservés par les commandes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Décompter les stocks réservés par les commandes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R62",
+      "original_feature": "Bloquer une vente lorsque le stock nécessaire est insuffisant.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Bloquer une vente lorsque le stock nécessaire est insuffisant.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R63",
+      "original_feature": "Refuser l’enregistrement d’une ancienne version de carte qui écraserait des changements plus récents.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Refuser l’enregistrement d’une ancienne version de carte qui écraserait des changements plus récents.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R64",
+      "original_feature": "Créer un menu composé de produits fixes, avec un prix propre.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un menu composé de produits fixes, avec un prix propre.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R65",
+      "original_feature": "Créer un menu au choix par catégorie.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un menu au choix par catégorie.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R66",
+      "original_feature": "Régler les quantités de produits ou de choix inclus dans un menu.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Régler les quantités de produits ou de choix inclus dans un menu.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R67",
+      "original_feature": "Décompter les stocks des produits composant les menus.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Décompter les stocks des produits composant les menus.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R68",
+      "original_feature": "Rendre un menu indisponible lorsque ses composants nécessaires sont épuisés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Rendre un menu indisponible lorsque ses composants nécessaires sont épuisés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R69",
+      "original_feature": "Gérer promotions et cadeaux dans une seule interface.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer promotions et cadeaux dans une seule interface.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R70",
+      "original_feature": "Créer un code de réduction en pourcentage.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un code de réduction en pourcentage.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R71",
+      "original_feature": "Créer un code donnant droit à un produit offert.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un code donnant droit à un produit offert.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R72",
+      "original_feature": "Choisir le produit cadeau et sa quantité.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Choisir le produit cadeau et sa quantité.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R73",
+      "original_feature": "Limiter le nombre total d’utilisations d’un code.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Limiter le nombre total d’utilisations d’un code.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R74",
+      "original_feature": "Voir les utilisations déjà consommées.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les utilisations déjà consommées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R75",
+      "original_feature": "Désactiver ou réactiver un code.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Désactiver ou réactiver un code.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R76",
+      "original_feature": "Préserver les compteurs existants ; créer un nouveau code pour changer une offre.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Préserver les compteurs existants ; créer un nouveau code pour changer une offre.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R77",
+      "original_feature": "Réserver également les stocks des cadeaux et de leurs composants.",
+      "original_decision": "modify",
+      "original_note": "que si le client passe une commande avec le code",
+      "effective_requirement": "Réserver les produits cadeaux et leurs composants uniquement à l'enregistrement d'une commande utilisant le code valide. La création ou la simple saisie d'un code ne réserve aucun stock.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R78",
+      "original_feature": "Régler les horaires d’ouverture et de fermeture.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Régler les horaires d’ouverture et de fermeture.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R79",
+      "original_feature": "Renseigner le lien de paiement Revolut.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Renseigner le lien de paiement Revolut.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R80",
+      "original_feature": "Renseigner le type de cuisine : bassari, halavi ou parvé.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Renseigner le type de cuisine : bassari, halavi ou parvé.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R81",
+      "original_feature": "Ouvrir un nouveau service.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir un nouveau service.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R82",
+      "original_feature": "Clôturer le service sans supprimer les commandes déjà reçues.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Clôturer le service sans supprimer les commandes déjà reçues.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R83",
+      "original_feature": "Activer ou désactiver la livraison PortoKitch.",
+      "original_decision": "modify",
+      "original_note": "oui mais livraison kosh",
+      "effective_requirement": "Activer ou désactiver la livraison Kosh pour son établissement, dans les limites des réglages généraux CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R84",
+      "original_feature": "Activer ou désactiver le retrait indépendamment de la livraison.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Activer ou désactiver le retrait indépendamment de la livraison.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R85",
+      "original_feature": "Programmer le début des précommandes.",
+      "original_decision": "modify",
+      "original_note": "le restaurant est degrisé et accessible a l'heure d'ouverture des precommandes et il est marqué precommande pour le client",
+      "effective_requirement": "Programmer le début des précommandes. À cette heure, le restaurant devient accessible et n'est plus grisé ; le client voit explicitement la mention Précommande. Respecter les restrictions générales et Chabbat.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R86",
+      "original_feature": "Programmer l’ouverture du service et un délai après ouverture.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Programmer l’ouverture du service et un délai après ouverture.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R87",
+      "original_feature": "Télécharger un compte rendu des commandes au format CSV.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Télécharger un compte rendu des commandes au format CSV.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "R88",
+      "original_feature": "Consulter les commandes terminées ou annulées dans les archives.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter les commandes terminées ou annulées dans les archives.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L01",
+      "original_feature": "Voir les courses disponibles de toutes les enseignes.",
+      "original_decision": "modify",
+      "original_note": "oui si compte activé par les ceo",
+      "effective_requirement": "Voir les offres de toutes les enseignes uniquement après activation du service de tournée par un CEO, avec compte actif.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L02",
+      "original_feature": "Recevoir des offres uniquement pour les commandes de livraison payées et éligibles.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Recevoir des offres uniquement pour les commandes de livraison payées et éligibles.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L03",
+      "original_feature": "Voir le restaurant, l’adresse de collecte, le statut et le nombre de colis avant acceptation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Avant acceptation, voir restaurant, adresse de collecte, statut, nombre de sacs disponibles et part compatible avec sa capacité ; ne pas exposer les coordonnées client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L04",
+      "original_feature": "Garder les coordonnées privées du client masquées avant acceptation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Masquer les coordonnées privées du client avant acceptation, y compris dans les réponses serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L05",
+      "original_feature": "Accepter lui-même une course.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accepter lui-même une course ou une part de sacs compatible avec sa capacité disponible.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L06",
+      "original_feature": "Attribuer exclusivement la course au premier livreur qui l’accepte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Acceptation exclusive par part de sacs : le premier à accepter obtient ces sacs. Les autres sacs non attribués de la commande restent proposés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L07",
+      "original_feature": "Signaler qu’une course vient d’être prise par un autre livreur.",
+      "original_decision": "modify",
+      "original_note": "il ne peut juste plus voir la course si elle a deja été acceptée",
+      "effective_requirement": "Retirer des offres les sacs déjà acceptés par un autre livreur ; garder visibles les sacs restant à attribuer. En cas d'action sur une vue ancienne, refuser atomiquement puis actualiser sans annoncer une acceptation fictive.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L08",
+      "original_feature": "Accepter plusieurs courses simultanément.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accepter plusieurs courses simultanément.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L09",
+      "original_feature": "Collecter dans plusieurs restaurants pendant une tournée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Collecter dans plusieurs restaurants pendant une tournée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L10",
+      "original_feature": "Déclarer une capacité de 1 à 5 colis, avec 5 proposés par défaut.",
+      "original_decision": "modify",
+      "original_note": "de 1 a 10 avec 5 par defaut",
+      "effective_requirement": "Capacité déclarée de 1 à 10 sacs, 5 par défaut. Contrôle sur la capacité encore disponible, pas seulement sur la capacité totale.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L11",
+      "original_feature": "Voir les colis engagés et les places restantes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les sacs engagés par ses parts et les places restantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L12",
+      "original_feature": "Bloquer une acceptation qui dépasserait la capacité déclarée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Bloquer l'acceptation d'une part qui dépasse la capacité disponible ; permettre de prendre une part plus petite et proposer le reste à d'autres livreurs.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L13",
+      "original_feature": "Signaler une charge inconnue lorsque les colis n’ont pas été correctement renseignés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Signaler une charge inconnue lorsque les colis n’ont pas été correctement renseignés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L14",
+      "original_feature": "Empêcher de réduire sa capacité en dessous des colis déjà engagés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Empêcher de réduire sa capacité en dessous des colis déjà engagés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L15",
+      "original_feature": "Voir ses courses acceptées dans une liste ordonnée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir ses parts de courses dans un ordre automatiquement calculé, puis éventuellement ajusté manuellement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L16",
+      "original_feature": "Mettre une course en premier.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Permettre de mettre un arrêt admissible en premier en respectant collectes préalables et capacité. Conserver la possibilité de réorganisation manuelle.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L17",
+      "original_feature": "Monter une course dans l’ordre de tournée.",
+      "original_decision": "modify",
+      "original_note": "l'ordre des livraisons doit etre calculé automatiquement en fonction des adresses de livraisons et de sa position. l'app doit calculer l'itineraire le plus rapide pour faire tout les arrets depuis le restaurant grace a google maps et generer un lien google maps cliquable par le livreur avec tout les arrets",
+      "effective_requirement": "Calculer automatiquement l'ordre des arrêts à partir de la position et des adresses, en minimisant le temps total pour terminer tous les arrêts. Une fois les commandes collectées au restaurant, optimiser l'ordre de toutes les livraisons. Le livreur peut ensuite modifier l'ordre manuellement. Générer le lien Google Maps correspondant.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L18",
+      "original_feature": "Descendre une course dans l’ordre de tournée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Permettre de descendre un arrêt admissible dans la tournée calculée, avec recalcul des estimations et respect des contraintes de collecte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L19",
+      "original_feature": "Conserver l’ordre choisi.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'ordre confirmé par le livreur ; ne pas l'écraser à chaque actualisation GPS. Permettre un nouveau calcul explicite.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L20",
+      "original_feature": "Indiquer qu’il part collecter une commande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Indiquer le départ pour la collecte des sacs acceptés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L21",
+      "original_feature": "Confirmer la collecte lorsque la commande est prête.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer la collecte de sa part prête et partir immédiatement, même si d'autres sacs de la commande n'ont pas encore de livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L22",
+      "original_feature": "Confirmer la livraison.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Confirmer uniquement la livraison de ses sacs. La dernière part livrée termine la commande entière.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L23",
+      "original_feature": "Libérer une course avant collecte, avec un motif.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Libérer sa part avant collecte avec motif ; aucun bouton d'annulation directe de la vente pour le livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L24",
+      "original_feature": "Remettre cette course à disposition sans annuler la vente.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Remettre seulement les sacs libérés à disposition, sans annuler la vente ni désaffecter d'autres livreurs.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L25",
+      "original_feature": "Consulter les adresses de collecte et de livraison après acceptation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter les adresses de collecte et de livraison après acceptation.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L26",
+      "original_feature": "Lire les instructions de livraison et messages du restaurant.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Lire les instructions de livraison et messages du restaurant.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L27",
+      "original_feature": "Appeler le client.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Appeler le client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L28",
+      "original_feature": "Ouvrir la navigation Google Maps.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir la navigation Google Maps.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L29",
+      "original_feature": "Ouvrir la navigation Plans Apple.",
+      "original_decision": "modify",
+      "original_note": "ajourte ouvrir navigation waze",
+      "effective_requirement": "Conserver Plans Apple et ajouter une ouverture de navigation Waze. La navigation multiarrêts complète est demandée pour Google Maps ; vérifier le support réel des autres applications.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L30",
+      "original_feature": "Annoncer manuellement un délai d’arrivée.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer la saisie d'un délai annoncé manuellement par le livreur. Les estimations routières et les délais annoncés par le restaurant restent possibles.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L31",
+      "original_feature": "Calculer les trajets avec OpenRouteService lorsque le service et le GPS sont disponibles.",
+      "original_decision": "modify",
+      "original_note": "avec google maps pas open route",
+      "effective_requirement": "Utiliser Google Maps Platform pour tous les calculs routiers ; remplacer complètement OpenRouteService et sa configuration.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L32",
+      "original_feature": "Voir les estimations de collecte et de livraison.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les estimations de collecte et de livraison.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L33",
+      "original_feature": "Signaler qu’une estimation routière est devenue ancienne.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer ce libellé détaillé d'ancienne estimation dans l'écran livreur. Conserver les contrôles serveur de fraîcheur et ne jamais présenter une durée invalide comme fiable (W15).",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L34",
+      "original_feature": "Actualiser automatiquement ses courses toutes les 10 secondes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Actualiser automatiquement ses courses toutes les 10 secondes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L35",
+      "original_feature": "Actualiser manuellement ses courses.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Actualiser manuellement ses courses.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L36",
+      "original_feature": "Demander automatiquement la localisation dès la connexion, même sans course.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Demander automatiquement la localisation dès la connexion, même sans course.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L37",
+      "original_feature": "Demander une nouvelle position toutes les 7,5 secondes pendant l’activité de la page.",
+      "original_decision": "modify",
+      "original_note": "toute les 3 secondes",
+      "effective_requirement": "Viser une acquisition de position toutes les trois secondes pendant l'activité de la page. Autorisation navigateur indispensable ; pas de garantie d'un nouveau point physique ni de suivi continu après suspension.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L38",
+      "original_feature": "Partager la position réelle avec le serveur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Partager la position réelle avec le serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L39",
+      "original_feature": "Afficher le suivi aux personnes autorisées : restaurant, CEO et client concerné.",
+      "original_decision": "modify",
+      "original_note": "plus de suivi gps pour le client seulement pour ceo et restaurateur",
+      "effective_requirement": "Réserver le suivi GPS au CEO et au restaurateur concerné. Aucun suivi GPS client, y compris dans les données transmises au navigateur client.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L40",
+      "original_feature": "Afficher l’état du GPS, sa précision et l’ancienneté de la dernière confirmation.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer du compte livreur le détail permanent de précision et d'ancienneté GPS. Conserver les messages d'erreur nécessaires et les interruptions (L41, L44), ainsi que les détails autorisés au restaurant (R39, R40).",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L41",
+      "original_feature": "Expliquer un refus de localisation, une position introuvable ou un délai dépassé.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Expliquer un refus de localisation, une position introuvable ou un délai dépassé.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L42",
+      "original_feature": "Essayer une localisation moins précise si la première acquisition échoue.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Essayer une localisation moins précise si la première acquisition échoue.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L43",
+      "original_feature": "Reprendre le suivi lorsque les conditions le permettent, sans répéter continuellement la demande d’autorisation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Reprendre le suivi lorsque les conditions le permettent, sans répéter continuellement la demande d’autorisation.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L44",
+      "original_feature": "Signaler une interruption réseau ou une position vieille de deux minutes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Signaler une interruption réseau ou une position vieille de deux minutes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L45",
+      "original_feature": "Arrêter le suivi de l’ancienne session lors d’une déconnexion ou d’un changement de compte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Arrêter le suivi de l’ancienne session lors d’une déconnexion ou d’un changement de compte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L46",
+      "original_feature": "Éviter que deux pages concurrentes présentent chacune leur suivi comme actif.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Éviter que deux pages concurrentes présentent chacune leur suivi comme actif.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L47",
+      "original_feature": "Afficher une carte avec position, collecte, destination et trajet routier.",
+      "original_decision": "modify",
+      "original_note": "seulement pour ceo et restaurateur pas pour client",
+      "effective_requirement": "Afficher la carte de suivi avec positions, collectes, destinations et trajets uniquement aux CEO et restaurateurs autorisés. Le livreur conserve sa tournée et ses liens de navigation externes ; le client ne reçoit pas la carte GPS.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L48",
+      "original_feature": "Animer le déplacement entre les positions réellement reçues.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Animer le déplacement entre points réellement reçus sur les cartes professionnelles autorisées, sans inventer de nouvelles coordonnées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L49",
+      "original_feature": "Conserver le zoom pendant les mises à jour.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver le zoom des cartes professionnelles autorisées pendant les mises à jour.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "L50",
+      "original_feature": "Recentrer la carte sur le trajet.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Recentrer les cartes professionnelles autorisées sur les trajets auxquels l'utilisateur a accès.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C01",
+      "original_feature": "Disposer de trois comptes CEO actifs maximum.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Disposer de trois comptes CEO actifs maximum.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C02",
+      "original_feature": "Donner les mêmes droits aux trois CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Donner les mêmes droits aux trois CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C03",
+      "original_feature": "Interdire l’inscription publique comme CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Interdire l’inscription publique comme CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C04",
+      "original_feature": "Créer un compte restaurateur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un compte restaurateur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C05",
+      "original_feature": "Associer ce compte à un établissement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Associer ce compte à un établissement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C06",
+      "original_feature": "Créer un compte livreur utilisable auprès de toutes les enseignes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un compte livreur valable pour toutes les enseignes. Ouvrir son service pour chaque tournée est une action CEO distincte de la création/activation du compte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C07",
+      "original_feature": "Créer un autre compte CEO dans la limite autorisée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Créer un autre compte CEO dans la limite autorisée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C08",
+      "original_feature": "Renseigner le nom et l’adresse e-mail d’un compte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Renseigner le nom et l’adresse e-mail d’un compte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C09",
+      "original_feature": "Afficher le champ établissement uniquement pour les restaurateurs.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Afficher le champ établissement uniquement pour les restaurateurs.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C10",
+      "original_feature": "Générer un mot de passe professionnel.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Générer un mot de passe professionnel.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C11",
+      "original_feature": "Tenter de copier automatiquement le mot de passe généré.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Tenter de copier automatiquement le mot de passe généré.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C12",
+      "original_feature": "Proposer un bouton de copie et un champ sélectionnable si la copie automatique échoue.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Proposer un bouton de copie et un champ sélectionnable si la copie automatique échoue.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C13",
+      "original_feature": "Réinitialiser un mot de passe.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Réinitialiser un mot de passe.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C14",
+      "original_feature": "Désactiver un compte et fermer ses sessions.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Désactiver le compte et fermer ses sessions. Ne pas confondre cette opération avec fermer le service d'une tournée, qui laisse terminer les parts déjà acceptées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C15",
+      "original_feature": "Réactiver un compte en conservant son mot de passe.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Réactiver un compte en conservant son mot de passe.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C16",
+      "original_feature": "Consulter la liste des comptes, rôles et états.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter la liste des comptes, rôles et états.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C17",
+      "original_feature": "Conserver les mots de passe professionnels créés ou changés dans un coffre chiffré réservé aux CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver les mots de passe professionnels créés ou changés dans un coffre chiffré réservé aux CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C18",
+      "original_feature": "Afficher un mot de passe conservé dans ce coffre.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Afficher un mot de passe conservé dans ce coffre.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C19",
+      "original_feature": "Journaliser la consultation du coffre.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Journaliser la consultation du coffre.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C20",
+      "original_feature": "Masquer les mots de passe affichés à la déconnexion ou à l’expiration.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Masquer les mots de passe affichés à la déconnexion ou à l’expiration.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C21",
+      "original_feature": "Consulter le journal des opérations de gestion.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter le journal des opérations de gestion.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C22",
+      "original_feature": "Voir les commandes de tous les établissements.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les commandes de toutes les enseignes, leurs parts, sacs attribués/restants et états de livraison.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C23",
+      "original_feature": "Utiliser les actions cuisine du restaurateur sur l’ensemble des établissements.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Utiliser les actions cuisine du restaurateur sur l’ensemble des établissements.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C24",
+      "original_feature": "Superviser paiements, préparation, collecte, livraison, annulations et remboursements déclarés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Superviser paiements, préparation, collecte, livraison, annulations et remboursements déclarés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C25",
+      "original_feature": "Lire et traiter les réclamations de toutes les enseignes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Lire et traiter les réclamations de toutes les enseignes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C26",
+      "original_feature": "Consulter les cartes et le suivi des livreurs sur les commandes concernées.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les cartes et le suivi des livreurs, avec supervision des parts de commande et des services ouverts.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C27",
+      "original_feature": "Accéder aux archives et comptes rendus CSV.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Accéder aux archives et comptes rendus CSV.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C28",
+      "original_feature": "Naviguer entre six sections : commandes, enseignes, coûts, comptes, agenda et réglages.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver la navigation structurée CEO en Commandes, Enseignes, Comptes, Agenda et Réglages. Supprimer Coûts puisque C45 à C59 sont retirées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C29",
+      "original_feature": "Choisir l’établissement à gérer.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Choisir l’établissement à gérer.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C30",
+      "original_feature": "Gérer les produits, photos, prix, options, disponibilités et stocks de toutes les enseignes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer les produits, photos, prix, options, disponibilités et stocks de toutes les enseignes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C31",
+      "original_feature": "Gérer les menus fixes et menus au choix.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer les menus fixes et menus au choix.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C32",
+      "original_feature": "Gérer les promotions et cadeaux de chaque enseigne.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Gérer les promotions et cadeaux de chaque enseigne.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C33",
+      "original_feature": "Modifier les horaires, le type de cuisine et le lien Revolut.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Modifier les horaires, le type de cuisine et le lien Revolut.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C34",
+      "original_feature": "Modifier le temps de préparation initial.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Modifier le temps de préparation initial.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C35",
+      "original_feature": "Rechercher l’adresse de collecte du restaurant avec Google.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Rechercher l’adresse de collecte du restaurant avec Google.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C36",
+      "original_feature": "Sélectionner et enregistrer une adresse de collecte avec ses coordonnées vérifiées.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Sélectionner et enregistrer une adresse de collecte avec ses coordonnées vérifiées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C37",
+      "original_feature": "Ouvrir ou clôturer le service d’une enseigne.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir ou clôturer le service d’une enseigne.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C38",
+      "original_feature": "Ouvrir ou clôturer le service général.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir ou clôturer le service général.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C39",
+      "original_feature": "Régler globalement la livraison et le retrait.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Régler globalement la livraison et le retrait.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C40",
+      "original_feature": "Activer ou désactiver Uber Colis, globalement et par enseigne.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Activer ou désactiver Uber Colis, globalement et par enseigne.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C41",
+      "original_feature": "Suspendre Uber Colis lorsque la livraison PortoKitch effective est active.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Suspendre Uber Colis quand la livraison Kosh effective est active.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C42",
+      "original_feature": "Faire primer les restrictions générales CEO sur les réglages locaux.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Faire primer les restrictions générales CEO sur les réglages locaux.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C43",
+      "original_feature": "Programmer globalement les précommandes, ouvertures et délais.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Programmer globalement les précommandes, ouvertures et délais.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C44",
+      "original_feature": "Conserver les commandes déjà acceptées malgré un changement de mode ou une fermeture.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver les commandes déjà acceptées malgré un changement de mode ou une fermeture.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C45",
+      "original_feature": "Enregistrer une matière première ou un emballage.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C46",
+      "original_feature": "Choisir une unité : grammes, millilitres ou pièces.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C47",
+      "original_feature": "Renseigner la quantité achetée.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C48",
+      "original_feature": "Renseigner le coût d’achat.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C49",
+      "original_feature": "Renseigner le rendement après pertes.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C50",
+      "original_feature": "Modifier une matière enregistrée.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C51",
+      "original_feature": "Créer une recette associée à une enseigne et un produit.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C52",
+      "original_feature": "Renseigner les quantités de matières utilisées dans la recette.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C53",
+      "original_feature": "Renseigner le nombre de pièces produites.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C54",
+      "original_feature": "Renseigner le nombre de pièces par portion.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C55",
+      "original_feature": "Ajouter les emballages et autres coûts de préparation.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C56",
+      "original_feature": "Calculer le coût théorique par portion, en tenant compte du rendement.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C57",
+      "original_feature": "Modifier une recette.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C58",
+      "original_feature": "Signaler une matière manquante ou un produit associé devenu indisponible.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C59",
+      "original_feature": "Corriger les références manquantes avant l’enregistrement.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Retirer cette fonctionnalité de matières/recettes/coûts et son interface. Ne pas supprimer les données historiques existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C60",
+      "original_feature": "Enregistrer et vérifier une clé Google Places.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Enregistrer et vérifier une clé Google Places.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C61",
+      "original_feature": "Enregistrer et vérifier une clé OpenRouteService.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Remplacer le réglage OpenRouteService par les réglages Google nécessaires au calcul des trajets. Distinguer Google Places, routage et éventuelle clé d'affichage restreinte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C62",
+      "original_feature": "Tester le service routier.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Tester le service de calcul Google configuré et afficher son état réel.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C63",
+      "original_feature": "Conserver les clés chiffrées sur le serveur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver les secrets serveur chiffrés ; une éventuelle clé Google destinée au navigateur doit être distincte et restreinte aux API et origines nécessaires.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C64",
+      "original_feature": "Voir si les services d’adresse et de routage sont configurés.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir si les services d’adresse et de routage sont configurés.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C65",
+      "original_feature": "Voir les permissions de notification de l’appareil.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les permissions de notification de l’appareil.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C66",
+      "original_feature": "Activer les notifications sur l’appareil.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Activer les notifications sur l’appareil.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C67",
+      "original_feature": "Consulter l’état du service de notifications serveur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Consulter l’état du service de notifications serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C68",
+      "original_feature": "Voir les notifications en attente, en échec ou en retard.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir les notifications en attente, en échec ou en retard.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C69",
+      "original_feature": "Voir le dernier contrôle et les erreurs du service de notifications.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Voir le dernier contrôle et les erreurs du service de notifications.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C70",
+      "original_feature": "Administrer l’agenda communautaire.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Administrer l’agenda communautaire.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C71",
+      "original_feature": "Ajouter des événements ponctuels.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ajouter des événements ponctuels.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C72",
+      "original_feature": "Ajouter des événements hebdomadaires.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ajouter des événements hebdomadaires.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "C73",
+      "original_feature": "Modifier ou supprimer les événements communautaires.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Modifier ou supprimer les événements communautaires.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W01",
+      "original_feature": "Autoriser une commande client sans compte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Autoriser une commande client sans compte.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W02",
+      "original_feature": "Limiter un panier à une seule enseigne.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Limiter un panier à une seule enseigne.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W03",
+      "original_feature": "Vérifier les prix, options obligatoires, promotions et stocks côté serveur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Vérifier les prix, options obligatoires, promotions et stocks côté serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W04",
+      "original_feature": "Empêcher deux commandes concurrentes de réserver le même stock disponible.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Empêcher deux commandes concurrentes de réserver le même stock disponible.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W05",
+      "original_feature": "Valider l’adresse de livraison à partir d’une suggestion Google sélectionnée, en conservant le numéro de rue.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Valider l’adresse de livraison à partir d’une suggestion Google sélectionnée, en conservant le numéro de rue.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W06",
+      "original_feature": "Utiliser les coordonnées vérifiées pour les trajets.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Utiliser les coordonnées vérifiées pour les trajets.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W07",
+      "original_feature": "Facturer la livraison PortoKitch 3,50 € dans la configuration historique.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Frais de livraison Kosh de 3,50 euros par commande. Le fractionnement ne déclenche pas de frais client supplémentaires sans nouvelle décision explicite.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W08",
+      "original_feature": "Ne pas ajouter ces frais au retrait ou à Uber Colis, organisé et payé par le client.",
+      "original_decision": "modify",
+      "original_note": "ajouter 50 cent pour le retrait",
+      "effective_requirement": "Retrait : 0,50 euro par commande. Uber Colis : pas de frais de livraison Kosh, transport organisé et payé par le client. Conversion d'une livraison déjà payée vers retrait : politique de remboursement différentiel encore à confirmer.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W09",
+      "original_feature": "Conserver le paiement Revolut avec confirmation manuelle du restaurant.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver le paiement Revolut avec confirmation manuelle du restaurant.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W10",
+      "original_feature": "Synchroniser les statuts entre client, restaurant, livreur et CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Synchroniser les statuts entre client, restaurant, livreur et CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W11",
+      "original_feature": "Afficher automatiquement le ticket côté client après validation du paiement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Afficher automatiquement le ticket côté client après validation du paiement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W12",
+      "original_feature": "Calculer l’arrivée en tenant compte du trajet vers le restaurant, de la préparation, de la manutention et des autres arrêts.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Estimer chaque collecte et livraison avec trajets Google, attente de préparation, cinq minutes de manutention par arrêt et autres arrêts de la tournée. Respecter les parts d'une commande fractionnée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W13",
+      "original_feature": "Utiliser cinq minutes de manutention par arrêt dans le calcul historique.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Utiliser cinq minutes de manutention par arrêt dans le calcul historique.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W14",
+      "original_feature": "Distinguer les horaires annoncés manuellement des estimations routières.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Distinguer estimations Google et délai annoncé manuellement par le restaurant/CEO. Le livreur n'annonce plus de délai manuel.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W15",
+      "original_feature": "Ne pas afficher une arrivée calculée comme actuelle lorsque les données nécessaires sont absentes ou anciennes.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ne pas afficher une arrivée calculée comme actuelle lorsque les données nécessaires sont absentes ou anciennes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W16",
+      "original_feature": "Détecter les commandes payées sans livreur après 5 puis 15 minutes, même sans navigateur ouvert.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Détecter les commandes payées sans livreur après 5 puis 15 minutes, même sans navigateur ouvert.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W17",
+      "original_feature": "Ne pas annuler ni rembourser automatiquement une commande faute de livreur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ne pas annuler ni rembourser automatiquement une commande faute de livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W18",
+      "original_feature": "Attendre l’accord du client pour transformer une livraison en retrait.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Attendre l’accord du client pour transformer une livraison en retrait.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W19",
+      "original_feature": "Attendre la décision du restaurant ou CEO pour une demande d’annulation après paiement.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Attendre la décision du restaurant ou CEO pour une demande d’annulation après paiement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W20",
+      "original_feature": "Restituer les stocks une seule fois lors d’une annulation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Restituer les stocks une seule fois lors d’une annulation.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W21",
+      "original_feature": "Permettre au client de confirmer la réception, noter la commande et déposer une réclamation.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Permettre au client de confirmer la réception, noter la commande et déposer une réclamation.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W22",
+      "original_feature": "Envoyer les alertes dans l’application ouverte et, lorsque configuré, par notifications push.",
+      "original_decision": "modify",
+      "original_note": "expliquer comment activer notif push la premiere fois",
+      "effective_requirement": "Conserver alertes et push selon configuration, avec guide de première activation adapté à l'appareil : installation PWA si nécessaire, permission et état d'abonnement.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W23",
+      "original_feature": "Bloquer les commandes pendant la période de Chabbat calculée.",
+      "original_decision": "modify",
+      "original_note": "recupere les horaire de chabbat a porto portugal. ajoute les zmanim et le daf hayomi sur: https://www.calj.net/\net met les sur les evenement",
+      "effective_requirement": "Bloquer les commandes pendant Chabbat selon les horaires vérifiés pour Porto, Portugal, Europe/Lisbon. Intégrer horaires de Chabbat, zmanim et Daf Hayomi issus de CalJ dans l'agenda/événements. Configurer réellement Porto, documenter les méthodes et ne pas utiliser les horaires par défaut de Paris.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "W24",
+      "original_feature": "Appliquer ensemble les horaires et restrictions de service générales et locales.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Appliquer ensemble les horaires et restrictions de service générales et locales.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H01",
+      "original_feature": "Ancien accès par code PIN , avec `0000` en démonstration ; remplacé par les comptes individuels.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : ancien PIN de démonstration retiré/remplacé par les comptes individuels. Ne pas réintroduire 0000.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H02",
+      "original_feature": "Affectation manuelle d’un livreur par restaurant ou CEO ; le mécanisme serveur existe encore, mais n’est plus proposé dans l’interface cuisine simplifiée. Une affectation reste une proposition que le livreur doit accepter.",
+      "original_decision": "modify",
+      "original_note": "manuellement que par ceo",
+      "effective_requirement": "Affectation manuelle d'une course ou part de commande uniquement par un CEO. Le livreur doit accepter ; capacité et service recontrôlés côté serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H03",
+      "original_feature": "Boutons de démarrage et d’arrêt du partage GPS ; retirés de l’interface au profit du GPS automatique.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : boutons démarrer/arrêter GPS retirés, GPS automatique.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H04",
+      "original_feature": "Copie de l’adresse de livraison ; présente dans l’ancien écran de course, absente de l’écran livreur simplifié.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : copie d'adresse absente de l'écran livreur simplifié. Ne pas la rétablir à partir de cette ligne historique.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H05",
+      "original_feature": "Correction manuelle du point de livraison par latitude et longitude ; présente dans l’ancien écran, absente de l’écran livreur simplifié.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : correction manuelle latitude/longitude absente du parcours livreur simplifié. Ne pas ajouter cette action.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H06",
+      "original_feature": "Consultation du ticket par le livreur ; présente dans l’ancien écran de course, absente du parcours simplifié.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : ticket absent du parcours livreur simplifié ; il reste disponible aux autres rôles prévus.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H07",
+      "original_feature": "Annulation directe d’une commande par le livreur ; remplacée dans son interface par la libération de course avant collecte.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver le remplacement : le livreur libère sa part avant collecte, il n'annule pas directement la commande.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H08",
+      "original_feature": "Compteurs de ventes, commandes et commission , avec commission historique de 1,50 € par commande ; présents dans la version initiale, moins exposés dans la cuisine simplifiée.",
+      "original_decision": "modify",
+      "original_note": "on enelve les 1,50 de commission",
+      "effective_requirement": "Conserver les compteurs utiles de commandes et ventes, supprimer la commission historique de 1,50 euro et ses calculs/affichages. Ne pas recréer une gestion de recettes/coûts.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H09",
+      "original_feature": "Historique des versions de carte ; données conservées.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'historique existant des versions de carte, sans supprimer ses données.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H10",
+      "original_feature": "Restauration d’une ancienne carte ; mécanisme serveur conservé avec protection des stocks et compteurs actuels, mais sans accès dans les six sections CEO actuelles.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Préserver le mécanisme existant de restauration de carte avec stocks, compteurs et état de service actuels. Ne pas ajouter un nouvel écran de restauration sur la seule base de cette ligne historique.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H11",
+      "original_feature": "Gestion des factures ; développée dans la première version professionnelle, puis retirée à ta demande.",
+      "original_decision": "modify",
+      "original_note": "on laisse retirée",
+      "effective_requirement": "Laisser retirée la gestion des factures ; conserver les archives existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H12",
+      "original_feature": "Analyse de factures avec IA ; retirée avec l’interface factures.",
+      "original_decision": "modify",
+      "original_note": "on laisse retiré",
+      "effective_requirement": "Laisser retirée l'analyse de factures IA ; conserver les archives existantes.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H13",
+      "original_feature": "Bilan financier plus large ; mentionné dans la première version, puis l’espace a été recentré sur matières, recettes et coûts.",
+      "original_decision": "drop",
+      "original_note": "",
+      "effective_requirement": "Ne pas créer ou rétablir le bilan financier étendu.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H14",
+      "original_feature": "Studio de personnalisation ; retiré à ta demande.",
+      "original_decision": "modify",
+      "original_note": "on laisse retiré",
+      "effective_requirement": "Laisser retiré le studio de personnalisation ; préserver les archives.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H15",
+      "original_feature": "Création de pages et sections d’application depuis ce studio ; ancien code et données conservés, interface retirée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : interface de création de pages/sections du studio retirée, archives conservées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H16",
+      "original_feature": "Modification avancée des styles depuis le studio ; interface retirée.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : interface de modification avancée des styles retirée.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H17",
+      "original_feature": "Studio IA pour proposer des modifications ; retiré à ta demande.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : studio IA retiré.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H18",
+      "original_feature": "Aperçu et historique des changements du studio ; interface retirée, archives historiques conservées.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : aperçu/historique du studio retiré de l'interface, archives conservées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H19",
+      "original_feature": "Gestion séparée des promotions et cadeaux ; remplacée par une interface commune.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver le remplacement par une interface commune promotions et cadeaux, pas deux gestions séparées.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H20",
+      "original_feature": "Activation Uber Colis par le restaurateur ; retirée, réservée aux CEO.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : activation Uber Colis retirée au restaurateur et réservée aux CEO.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H21",
+      "original_feature": "Recherche générale dans l’espace livreur ; retirée pour simplifier l’écran.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l'état actuel : recherche générale retirée de l'espace livreur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "H22",
+      "original_feature": "Grands panneaux empilés et informations redondantes ; remplacés par navigation par rôle et détails dépliables.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver le remplacement des grands panneaux redondants par une navigation par rôle et des détails dépliables.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G01",
+      "original_feature": "Conserver les trois jeux d’arcade : Pita Pulse, Golden Stack et Porto Flight.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver les trois jeux d’arcade : Pita Pulse, Golden Stack et Porto Flight.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G02",
+      "original_feature": "Jouer sans niveaux ni fin prévue, avec difficulté progressive et sans plafond de score fixé.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Jouer sans niveaux ni fin prévue, avec difficulté progressive et sans plafond de score fixé.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G03",
+      "original_feature": "Ouvrir les jeux uniquement après une commande, pendant une heure à partir de sa date serveur.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Ouvrir les jeux uniquement après une commande, pendant une heure à partir de sa date serveur.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G04",
+      "original_feature": "Conserver l’échéance après rechargement et arrêter une partie en cours à la fin de l’heure.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Conserver l’échéance après rechargement et arrêter une partie en cours à la fin de l’heure.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G05",
+      "original_feature": "Retirer l’accès lié à une commande annulée ; une nouvelle commande ouvre sa propre fenêtre.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Retirer l’accès lié à une commande annulée ; une nouvelle commande ouvre sa propre fenêtre.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G06",
+      "original_feature": "Classer les joueurs par cumul des meilleurs scores des trois jeux.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Classer les joueurs par cumul des meilleurs scores des trois jeux.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G07",
+      "original_feature": "Retrouver l’identifiant joueur et ses records sur plusieurs appareils après connexion.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Retrouver l’identifiant joueur et ses records sur plusieurs appareils après connexion.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    },
+    {
+      "id": "G08",
+      "original_feature": "Vérifier les scores côté serveur à partir du déroulement de la partie.",
+      "original_decision": "keep",
+      "original_note": "",
+      "effective_requirement": "Vérifier les scores côté serveur à partir du déroulement de la partie.",
+      "implementation_status": "À vérifier dans le dépôt cible"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: kosh
+    runtime: python
+    region: frankfurt
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /
+    disk:
+      name: kosh-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PK_HOST
+        value: 0.0.0.0
+      - key: PK_RUNTIME
+        value: /data
+      - key: PK_SECURE
+        value: "1"
+      - key: PK_BOOTSTRAP_CEO
+        sync: false
+      - key: PK_BOOTSTRAP_PASSWORD
+        sync: false
