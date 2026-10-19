@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+:root{--navy:#0b1a4a;--blue:#1648ed;--cream:#fdf6e3;--gold:#f6d365;--orange:#c2410c;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font-family:"Inter Display","Inter",system-ui,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(120% 80% at 50% 0%,#1d3fb8 0%,#0b1a4a 55%,#060f2e 100%)}
+.bgblob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.scene{position:absolute;inset:0;opacity:0;visibility:hidden}
+.scene.on{opacity:1;visibility:visible}
+.title{position:absolute;left:0;right:0;text-align:center;font-weight:900;letter-spacing:-.03em;line-height:.98}
+.sub{position:absolute;left:0;right:0;text-align:center;font-weight:600;color:rgba(255,255,255,.82)}
+.kicker{position:absolute;left:0;right:0;text-align:center;font-weight:800;letter-spacing:.28em;color:var(--gold);font-size:30px;text-transform:uppercase}
+.phone{position:absolute;width:600px;height:1220px;border-radius:88px;background:#0a0a0f;box-shadow:0 60px 120px rgba(0,0,0,.55),0 0 0 3px #2a2f3a inset;padding:18px;transform-origin:center}
+.phone .screen{position:relative;width:100%;height:100%;border-radius:74px;overflow:hidden;background:#fff}
+.phone .island{position:absolute;top:30px;left:50%;transform:translateX(-50%);width:170px;height:48px;border-radius:30px;background:#000;z-index:5}
+.phone .shot{position:absolute;left:0;top:0;width:100%;will-change:transform;opacity:0}
+.phone .shot.on{opacity:1}
+.ripple{position:absolute;width:140px;height:140px;border-radius:50%;border:6px solid var(--gold);transform:translate(-50%,-50%) scale(0);opacity:0;pointer-events:none;z-index:9}
+.badge{position:absolute;padding:22px 38px;border-radius:999px;background:var(--gold);color:#1a1a1a;font-weight:900;font-size:44px;box-shadow:0 30px 60px rgba(0,0,0,.4);white-space:nowrap}
+.badge.blue{background:var(--blue);color:#fff}
+.badge.orange{background:var(--orange);color:#fff}
+.logo{position:absolute;width:150px;height:150px;border-radius:38px;overflow:hidden;background:#fff;box-shadow:0 30px 50px rgba(0,0,0,.45)}
+.logo img{width:100%;height:100%;object-fit:cover}
+.brand{position:absolute;left:0;right:0;text-align:center;display:flex;align-items:center;justify-content:center;gap:34px}
+.brand img{width:190px;height:190px;border-radius:50px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.brand span{font-size:200px;font-weight:900;letter-spacing:-.05em}
+.brand span i{font-style:normal;color:#ff6a3d}
+.particle{position:absolute;border-radius:50%;background:var(--gold);opacity:.7}
+.ios{position:absolute;inset:0;background:#000}
+.ios .wall{position:absolute;inset:0;background:radial-gradient(90% 60% at 30% 20%,#3b6cff 0%,#13235f 50%,#070b22 100%)}
+.ios .grid{position:absolute;left:40px;right:40px;top:150px;display:grid;grid-template-columns:repeat(4,1fr);gap:40px 20px;justify-items:center}
+.ios .app{width:112px;text-align:center;font-size:20px;font-weight:600;color:#fff}
+.ios .app .ic{width:112px;height:112px;border-radius:28px;margin:0 auto 10px;background:linear-gradient(135deg,#c7cdd8,#8c95a6)}
+.ios .app.kosh .ic{background:#fff;overflow:hidden}
+.ios .app.kosh .ic img{width:100%;height:100%}
+.ios .dock{position:absolute;left:30px;right:30px;bottom:30px;height:150px;border-radius:44px;background:rgba(255,255,255,.22);backdrop-filter:blur(20px)}
+.safari{position:absolute;left:0;right:0;bottom:0;height:150px;background:rgba(245,245,247,.96);border-top:1px solid #ddd;display:flex;align-items:center;justify-content:space-around;padding:0 20px 20px;color:#1648ed;font-size:46px}
+.safari .url{position:absolute;left:28px;right:28px;top:-96px;height:76px;border-radius:20px;background:#e6e6ea;display:flex;align-items:center;justify-content:center;font-size:30px;color:#222;font-weight:600}
+.sheet{position:absolute;left:0;right:0;bottom:0;height:62%;background:#f2f2f7;border-radius:40px 40px 0 0;transform:translateY(100%);color:#111}
+.sheet .hd{display:flex;gap:20px;align-items:center;padding:30px 32px;border-bottom:1px solid #ddd}
+.sheet .hd .ic{width:90px;height:90px;border-radius:22px;overflow:hidden;background:#fff}
+.sheet .hd .ic img{width:100%;height:100%}
+.sheet .hd b{font-size:30px;display:block}.sheet .hd small{font-size:24px;color:#666}
+.sheet .apps{display:flex;gap:26px;padding:26px 32px;border-bottom:1px solid #ddd}
+.sheet .apps div{width:100px;height:100px;border-radius:26px;background:#d8d8de}
+.sheet ul{list-style:none;margin:20px 28px;background:#fff;border-radius:24px;overflow:hidden}
+.sheet li{display:flex;justify-content:space-between;align-items:center;padding:26px 30px;font-size:30px;border-bottom:1px solid #eee}
+.sheet li .ico{width:44px;height:44px;border:4px solid #333;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:800}
+.sheet li.hl{background:#fff5cc}
+.step{position:absolute;left:0;right:0;text-align:center;font-weight:800;font-size:54px}
+.step b{display:inline-block;width:76px;height:76px;border-radius:50%;background:var(--gold);color:#111;line-height:76px;margin-right:18px;font-size:44px}
+</style></head>
+<body><div id="stage">
+<div class="bgblob" style="width:900px;height:900px;left:-300px;top:-200px;background:#2b5cff"></div>
+<div class="bgblob" style="width:700px;height:700px;right:-250px;bottom:100px;background:#c2410c;opacity:.35"></div>
+<div id="particles"></div>
+
+<!-- S0 hook -->
+<div class="scene" id="s0">
+  <div class="kicker" id="s0k" style="top:560px">Kosh Porto ✦ À table ensemble</div>
+  <div class="title" id="s0a" style="top:640px;font-size:150px">Manger casher<br>à Porto ?</div>
+  <div class="title" id="s0b" style="top:1010px;font-size:130px;color:var(--gold)">Ultra simple.</div>
+  <div class="brand" id="s0brand" style="top:1250px"><img src="icon-512.png"><span>KOSH<i>.</i></span></div>
+</div>
+
+<!-- S1 restaurants -->
+<div class="scene" id="s1">
+  <div class="kicker" style="top:120px">Les adresses de Porto</div>
+  <div class="title" id="s1t" style="top:180px;font-size:104px">11 restaurants casher.<br><span style="color:var(--gold)">Une seule appli.</span></div>
+  <div class="phone" id="s1p" style="left:240px;top:520px"><div class="screen"><div class="island"></div><img class="shot on" id="s1shot" src="shots/full-home.png"></div></div>
+  <div id="s1logos"></div>
+</div>
+
+<!-- S2 order -->
+<div class="scene" id="s2">
+  <div class="kicker" style="top:120px">Commande express</div>
+  <div class="title" id="s2t" style="top:180px;font-size:104px">Tu choisis.<br><span style="color:var(--gold)">Tu commandes.</span></div>
+  <div class="phone" id="s2p" style="left:240px;top:520px"><div class="screen"><div class="island"></div>
+    <img class="shot" id="s2a" src="shots/full-kfc.png"><img class="shot" id="s2b" src="shots/08-options.png"><img class="shot" id="s2c" src="shots/kfc-added.png"><img class="shot" id="s2d" src="shots/full-panier.png">
+    <div class="ripple" id="s2r"></div></div></div>
+  <div class="badge" id="s2badge" style="left:60px;top:1500px">+ Ajouté au panier · 16,00 €</div>
+</div>
+
+<!-- S3 delivery -->
+<div class="scene" id="s3">
+  <div class="kicker" style="top:120px">Livraison KOSH</div>
+  <div class="title" id="s3t" style="top:180px;font-size:104px">Livré<br><span style="color:var(--gold)">jusqu'à ta porte.</span></div>
+  <div class="phone" id="s3p" style="left:240px;top:520px"><div class="screen"><div class="island"></div>
+    <img class="shot on" id="s3a" src="shots/full-panier.png"><img class="shot" id="s3b" src="shots/full-suivi.png"><div class="ripple" id="s3r"></div></div></div>
+  <div class="badge orange" id="s3badge" style="left:620px;top:1380px">Livraison 3,50 €</div>
+  <div class="badge blue" id="s3badge2" style="left:70px;top:1620px">Retrait sur place · OK</div>
+</div>
+
+<!-- S4 games -->
+<div class="scene" id="s4">
+  <div class="kicker" style="top:120px">Pour patienter</div>
+  <div class="title" id="s4t" style="top:180px;font-size:104px">Ta commande arrive ?<br><span style="color:var(--gold)">Tu joues.</span></div>
+  <div class="phone" id="s4p1" style="left:-40px;top:620px;transform:rotate(-8deg) scale(.78)"><div class="screen"><div class="island"></div><img class="shot on" src="shots/20-game-Golden-Stack.png" style="transform:translateY(-200px)"></div></div>
+  <div class="phone" id="s4p3" style="left:480px;top:620px;transform:rotate(8deg) scale(.78)"><div class="screen"><div class="island"></div><img class="shot on" src="shots/20-game-Porto-Flight.png" style="transform:translateY(-200px)"></div></div>
+  <div class="phone" id="s4p2" style="left:240px;top:560px"><div class="screen"><div class="island"></div><img class="shot on" src="shots/game-pita.png" style="transform:translateY(-420px)"></div></div>
+  <div class="badge" id="s4b1" style="left:80px;top:1560px">🎮 4 jeux d'arcade</div>
+  <div class="badge blue" id="s4b2" style="left:560px;top:1560px">🏆 Classement</div>
+  <div class="badge orange" id="s4b3" style="left:300px;top:1690px">⏱ 1 h de jeu par commande</div>
+</div>
+
+<!-- S5 agenda -->
+<div class="scene" id="s5">
+  <div class="kicker" style="top:120px">Vivre Porto ensemble</div>
+  <div class="title" id="s5t" style="top:180px;font-size:96px">Les événements.<br><span style="color:var(--gold)">Les horaires de Chabbat.</span></div>
+  <div class="phone" id="s5p" style="left:240px;top:520px"><div class="screen"><div class="island"></div><img class="shot on" id="s5shot" src="shots/full-agenda.png"></div></div>
+  <div class="badge" id="s5b1" style="left:40px;top:1240px">🕯 Allumage 18:24</div>
+  <div class="badge blue" id="s5b2" style="left:560px;top:1560px">✡ Zmanim de Porto</div>
+</div>
+
+<!-- S6 install -->
+<div class="scene" id="s6">
+  <div class="kicker" style="top:120px">Sans App Store</div>
+  <div class="title" id="s6t" style="top:180px;font-size:104px">Installe KOSH<br><span style="color:var(--gold)">en 3 secondes.</span></div>
+  <div class="phone" id="s6p" style="left:240px;top:330px"><div class="screen"><div class="island"></div>
+    <img class="shot on" id="s6shot" src="shots/00-home.png">
+    <div class="safari" id="s6safari"><div class="url">🔒 portokosh.fr</div><span>‹</span><span>›</span><span id="s6share">⬆︎</span><span>📖</span><span>⧉</span></div>
+    <div class="sheet" id="s6sheet">
+      <div class="hd"><div class="ic"><img src="icon-512.png"></div><div><b>KOSH · Porto à table</b><small>portokosh.fr</small></div></div>
+      <div class="apps"><div></div><div></div><div></div><div></div><div></div></div>
+      <ul><li>Copier <span>⧉</span></li><li>Ajouter à la liste de lecture <span>👓</span></li><li class="hl" id="s6row">Sur l'écran d'accueil <span class="ico">+</span></li><li>Rechercher dans la page <span>🔍</span></li></ul>
+    </div>
+    <div class="ios" id="s6ios" style="opacity:0"><div class="wall"></div><div class="grid" id="s6grid"></div><div class="dock"></div></div>
+    <div class="ripple" id="s6r"></div></div></div>
+  <div class="step" id="s6s1" style="top:1500px"><b>1</b>Ouvre <span style="color:var(--gold)">PortoKosh.fr</span> dans Safari</div>
+  <div class="step" id="s6s2" style="top:1610px"><b>2</b>Touche <span style="color:var(--gold)">Partager</span></div>
+  <div class="step" id="s6s3" style="top:1720px"><b>3</b><span style="color:var(--gold)">Sur l'écran d'accueil</span> · c'est installé</div>
+</div>
+
+<!-- S7 outro -->
+<div class="scene" id="s7">
+  <div class="brand" id="s7brand" style="top:640px"><img src="icon-512.png"><span>KOSH<i>.</i></span></div>
+  <div class="title" id="s7t" style="top:900px;font-size:92px">Porto, à table.</div>
+  <div class="badge" id="s7url" style="left:50%;top:1120px;transform:translateX(-50%);font-size:64px;padding:30px 60px">PortoKosh.fr</div>
+  <div class="sub" id="s7s" style="top:1300px;font-size:40px">Restaurants casher · Livraison · Jeux · Agenda · Chabbat</div>
+</div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const outBack=x=>{const c=1.70158,c3=c+1;return 1+c3*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const outExpo=x=>x===1?1:1-Math.pow(2,-10*x);
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const SCREEN_W=564; // inner screen width px
+const scaleShot=img=>{ const r=SCREEN_W/1179; img.style.width='100%'; return r; };
+// generic helpers
+function pop(el,p,from=0.6,dy=60){ el.style.opacity=p; el.style.transform=`translateY(${(1-p)*dy}px) scale(${from+(1-from)*outBack(p)})`; }
+function fade(el,p){ el.style.opacity=p; }
+function slideUp(el,p,dy=120){ el.style.opacity=p; el.style.transform=`translateY(${(1-ease(p))*dy}px)`; }
+function badgePop(el,p){ el.style.opacity=p>0?1:0; el.style.transform=`scale(${outBack(p)}) rotate(${(1-p)*-8}deg)`; }
+function ripple(el,x,y,p){ el.style.left=x+'px'; el.style.top=y+'px'; el.style.opacity=p>0&&p<1?1-p:0; el.style.transform=`translate(-50%,-50%) scale(${p*1.6})`; }
+function scroll(img,px){ img.style.transform=`translateY(${-px}px)`; }
+function phoneIn(ph,p,base=''){ ph.style.opacity=p>0?1:0; ph.style.transform=`${base} translateY(${(1-outExpo(p))*700}px)`; }
+
+// particles
+const P=[];for(let i=0;i<40;i++){const d=document.createElement('div');d.className='particle';const s=4+Math.random()*10;d.style.width=d.style.height=s+'px';$('#particles').appendChild(d);P.push({d,x:Math.random()*1080,y:Math.random()*1920,v:20+Math.random()*40,o:.2+Math.random()*.5});}
+// logos
+const LOGOS=['chabad-porto','levfood','chez-fhims','kosherfc','neshama-bakery','yoriz-tartarel','maison-metouka','saveurs-shabbat','koshergo','okaffe','le-j'];
+const LG=LOGOS.map((n,i)=>{const d=document.createElement('div');d.className='logo';d.innerHTML=`<img src="logo-${n}.jpg">`;$('#s1logos').appendChild(d);
+  const side=i%2?1:-1; const row=Math.floor(i/2); return {d,x:side<0?40:890,y:560+row*215,delay:i*.12,side};});
+// ios grid
+const NAMES=['Messages','Photos','Appareil','Plans','Météo','Notes','Musique','Mail','Safari','Horloge','Réglages'];
+NAMES.forEach(n=>{const a=document.createElement('div');a.className='app';a.innerHTML=`<div class="ic"></div>${n}`;$('#s6grid').appendChild(a);});
+const KA=document.createElement('div');KA.className='app kosh';KA.innerHTML=`<div class="ic"><img src="icon-512.png"></div>KOSH`;$('#s6grid').appendChild(KA);
+
+// timeline (seconds) — adjusted to the voice-over
+const T={s0:[0,3.6],s1:[3.6,8.2],s2:[8.2,11.0],s3:[11.0,13.6],s4:[13.6,19.8],s5:[19.8,24.9],s6:[24.9,33.2],s7:[33.2,38.5]};
+const K={s0:1,s1:5.6/4.6,s2:5.4/2.8,s3:4.8/2.6,s4:5.8/6.2,s5:5.2/5.1,s6:7.8/8.3,s7:1};
+window.seek=function(t){
+  for(const k in T){const [a,b]=T[k];$('#'+k).classList.toggle('on',t>=a&&t<b);}
+  P.forEach(p=>{const y=((p.y-t*p.v)%1920+1920)%1920;p.d.style.left=p.x+'px';p.d.style.top=y+'px';p.d.style.opacity=p.o*(0.5+0.5*Math.sin(t*2+p.x));});
+  // S0
+  if(t<T.s0[1]){const u=t-T.s0[0];pop($('#s0k'),seg(u,0,.5));pop($('#s0a'),seg(u,.15,.8));pop($('#s0b'),seg(u,1.1,1.7));pop($('#s0brand'),seg(u,2.0,2.6),.4,0);
+    const out=seg(u,3.2,3.6);$('#s0').style.opacity=1-out;$('#s0').style.transform=`scale(${1+out*.08})`;}
+  // S1
+  if(t>=T.s1[0]&&t<T.s1[1]){const u=(t-T.s1[0])*K.s1;slideUp($('#s1t'),seg(u,0,.6));phoneIn($('#s1p'),seg(u,.1,.9));
+    scroll($('#s1shot'),Math.max(0,ease(seg(u,1.0,5.2))*2600));
+    LG.forEach(l=>{const p=seg(u,1.2+l.delay,1.8+l.delay);l.d.style.left=l.x+'px';l.d.style.top=l.y+'px';l.d.style.opacity=p;l.d.style.transform=`translateX(${(1-outBack(p))*l.side*300}px) rotate(${(1-p)*l.side*25}deg)`;});
+    const out=seg(u,5.0,5.6);$('#s1').style.opacity=1-out;}
+  // S2
+  if(t>=T.s2[0]&&t<T.s2[1]){const u=(t-T.s2[0])*K.s2;slideUp($('#s2t'),seg(u,0,.6));phoneIn($('#s2p'),seg(u,0,.7));
+    const a=$('#s2a'),b=$('#s2b'),c=$('#s2c'),d=$('#s2d');[a,b,c,d].forEach(x=>x.classList.remove('on'));
+    if(u<1.9){a.classList.add('on');scroll(a,ease(seg(u,.6,1.6))*180);ripple($('#s2r'),518,700,seg(u,1.5,2.0));}
+    else if(u<3.0){b.classList.add('on');ripple($('#s2r'),282,1050,seg(u,2.5,3.0));}
+    else if(u<3.9){c.classList.add('on');}
+    else{d.classList.add('on');scroll(d,ease(seg(u,4.1,5.2))*300);}
+    badgePop($('#s2badge'),seg(u,3.0,3.5)*(u<4.2?1:1-seg(u,3.9,4.2)));
+    const out=seg(u,5.0,5.4);$('#s2').style.opacity=1-out;}
+  // S3
+  if(t>=T.s3[0]&&t<T.s3[1]){const u=(t-T.s3[0])*K.s3;slideUp($('#s3t'),seg(u,0,.6));phoneIn($('#s3p'),seg(u,0,.6));
+    const a=$('#s3a'),b=$('#s3b');
+    if(u<2.2){a.classList.add('on');b.classList.remove('on');scroll(a,900+ease(seg(u,.3,1.2))*620);ripple($('#s3r'),282,760,seg(u,1.7,2.2));}
+    else{a.classList.remove('on');b.classList.add('on');scroll(b,ease(seg(u,2.6,4.2))*900);}
+    badgePop($('#s3badge'),seg(u,1.0,1.5));badgePop($('#s3badge2'),seg(u,1.5,2.0));
+    const out=seg(u,4.4,4.8);$('#s3').style.opacity=1-out;}
+  // S4
+  if(t>=T.s4[0]&&t<T.s4[1]){const u=(t-T.s4[0])*K.s4;slideUp($('#s4t'),seg(u,0,.6));
+    phoneIn($('#s4p1'),seg(u,.3,1.0),'rotate(-8deg) scale(.78)');phoneIn($('#s4p3'),seg(u,.45,1.15),'rotate(8deg) scale(.78)');phoneIn($('#s4p2'),seg(u,.1,.8),'scale(.9)');
+    const bob=Math.sin(u*3)*10;$('#s4p2').style.transform+=` translateY(${bob}px)`;
+    badgePop($('#s4b1'),seg(u,1.6,2.1));badgePop($('#s4b2'),seg(u,2.0,2.5));badgePop($('#s4b3'),seg(u,2.5,3.0));
+    const out=seg(u,5.4,5.8);$('#s4').style.opacity=1-out;}
+  // S5
+  if(t>=T.s5[0]&&t<T.s5[1]){const u=(t-T.s5[0])*K.s5;slideUp($('#s5t'),seg(u,0,.6));phoneIn($('#s5p'),seg(u,0,.7));
+    scroll($('#s5shot'),ease(seg(u,.6,1.8))*1750+ease(seg(u,2.6,3.8))*1400);
+    badgePop($('#s5b1'),seg(u,1.6,2.1));badgePop($('#s5b2'),seg(u,3.8,4.3));
+    const out=seg(u,4.8,5.2);$('#s5').style.opacity=1-out;}
+  // S6
+  if(t>=T.s6[0]&&t<T.s6[1]){const u=(t-T.s6[0])*K.s6;slideUp($('#s6t'),seg(u,0,.6));phoneIn($('#s6p'),seg(u,0,.7),'scale(.82)');
+    slideUp($('#s6s1'),seg(u,.6,1.0));slideUp($('#s6s2'),seg(u,2.2,2.6));slideUp($('#s6s3'),seg(u,4.0,4.4));
+    $('#s6share').style.transform=`scale(${1+ (u>2.2&&u<2.8?Math.sin(seg(u,2.2,2.8)*Math.PI)*.5:0)})`;$('#s6share').style.display='inline-block';
+    ripple($('#s6r'),282,1130,seg(u,2.3,2.8));
+    const sh=ease(seg(u,2.7,3.3));$('#s6sheet').style.transform=`translateY(${(1-sh)*100}%)`;
+    $('#s6row').style.background= (u>4.0)?'#ffe58a':'#fff5cc';ripple($('#s6r'),282,(u>3.9?945:1130), u>3.9?seg(u,4.0,4.5):seg(u,2.3,2.8));
+    const ios=$('#s6ios');const ip=seg(u,4.8,5.3);ios.style.opacity=ip;$('#s6sheet').style.visibility=ip>=1?'hidden':'visible';
+    const kp=seg(u,5.4,6.0);KA.style.opacity=kp;KA.style.transform=`scale(${outBack(kp)})`;
+    const out=seg(u,7.6,7.8);$('#s6').style.opacity=1-out;}
+  // S7
+  if(t>=T.s7[0]){const u=t-T.s7[0];pop($('#s7brand'),seg(u,0,.7),.5,0);pop($('#s7t'),seg(u,.5,1.0));
+    const p=seg(u,.9,1.4);$('#s7url').style.opacity=p;$('#s7url').style.transform=`translateX(-50%) scale(${outBack(p)})`;fade($('#s7s'),seg(u,1.3,1.8));}
+};
+seek(0);
+</script></body></html>
