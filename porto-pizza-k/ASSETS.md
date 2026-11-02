@@ -14,7 +14,7 @@ Il faut 10 images, générées par IA (gpt-image, Seedream, Flux…) ou photogra
 
 Prompt de base (à adapter) :
 
-> Professional food photography, perfectly top-down 90° overhead view of an UNBAKED raw Neapolitan pizza: hand-stretched raw pale cream dough with a thicker raw puffy rim, smooth bright red San Marzano tomato sauce, generous torn pieces of fresh white fior di latte mozzarella, raw and not melted, light dusting of flour. No basil, nothing else. Perfectly centered and round, fills 88% of the square frame, flat seamless plain warm light grey background, soft diffused daylight, very soft contact shadow, ultra realistic.
+> Professional food photography, perfectly top-down 90° overhead view of an UNBAKED raw Neapolitan pizza: hand-stretched raw pale cream dough with a thicker raw puffy rim, smooth bright red San Marzano tomato sauce, generous torn pieces of fresh white fior di latte mozzarella, raw and not melted, light dusting of flour. No basil, nothing else. Perfectly centered and round, fills 88% of the square frame, flat seamless plain medium neutral grey background (#9a9a98), soft diffused daylight, very soft contact shadow, ultra realistic.
 
 Version cuite (avec la crue en référence) : *« Same pizza, same framing, now baked in a 450 °C wood-fired oven: puffy golden crust with leopard char spots, mozzarella melted and lightly golden, sauce slightly reduced. »*
 
