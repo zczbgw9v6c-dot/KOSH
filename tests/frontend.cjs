@@ -12,7 +12,7 @@ const context=vm.createContext({document:doc,window:{devicePixelRatio:1,addEvent
   fetch:async()=>({ok:true,json:async()=>data}),confirm:()=>true});
 const source=fs.readFileSync(path.join(root,'index.html'),'utf8');
 vm.runInContext(source.match(/<script>([\s\S]*?)<\/script>/)[1],context,{filename:'index.html'});
-for(const file of ['arcade.js','professional.js','menu-composition.js','content-studio.js','live-map.js','operations.js','kitchen.js'])vm.runInContext(fs.readFileSync(path.join(root,'js',file),'utf8'),context,{filename:file});
+for(const file of ['arcade.js','professional.js','meal-preview.js','menu-composition.js','content-studio.js','live-map.js','operations.js','kitchen.js'])vm.runInContext(fs.readFileSync(path.join(root,'js',file),'utf8'),context,{filename:file});
 const read=code=>vm.runInContext(code,context);
 assert.equal(read('Boolean(arcade.allowed())'),false);
 assert.match(read('vGames()'),/réservés aux clients/);
@@ -28,4 +28,27 @@ read("mdoc('levfood').items={'add-009':{s:4},menu:{id:'menu',n:'Menu',p:8,c:'Men
 assert.equal(read("items('levfood').find(i=>i.id==='menu').s"),2);
 assert.equal(read("stk(items('levfood').find(i=>i.id==='menu'))"),'');
 assert.match(read('vProfile()'),/Espace livreur/);assert.match(read('vProfile()'),/Espace CEO/);
+// A visible recipe is driven by the same selections that reach the cart.
+read(`
+  store.menus['le-j']={items:{'test-burger':{
+    n:'Burger',p:10,c:'Burgers',s:2,
+    o:[{t:'Garnitures',ch:[{n:'Tomate',p:0.5}]}],
+    mealPreview:{profile:'burger',layers:[
+      {asset:'bun-bottom'},{asset:'beef'},
+      {asset:'tomato',option:{group:'Garnitures',choice:'Tomate'}},{asset:'bun-top'}
+    ]}
+  }}};
+  A.cfg('test-burger',{dataset:{m:'le-j'}});
+`);
+assert.match(read('vCfg()'), /id="meal-preview-slot"/);
+read("A.cfsel('0',{dataset:{g:'0'}});A.cfq('1');");
+assert.match(read('vCfg()'), /21,00/);
+read('A.cfadd()');
+assert.equal(read("JSON.stringify(lines().map(({p,q,o})=>({p,q,o})))"), '[{"p":10.5,"q":2,"o":["Tomate"]}]');
+read(`
+  mdoc('le-j').items['test-burger'].mealPreview.layers[2].option.choice='Removed';
+  A.cfg('test-burger',{dataset:{m:'le-j'}});
+`);
+assert.doesNotMatch(read('vCfg()'), /id="meal-preview-slot"/);
+assert.match(read('vCfg()'), /data-a="cfadd"/);
 console.log('Frontend: all modules loaded; game gating, arbitrary-precision ranking, menu stock and app links passed.');

@@ -1,0 +1,59 @@
+.meal-preview {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-block: 14px;
+  border: 1px solid #3a4658;
+  border-radius: 24px;
+  background: radial-gradient(ellipse at 50% 65%, #3a4658, #131c2c 73%);
+  color: #fff;
+}
+.meal-stage {
+  position: relative;
+  width: min(100%, 450px);
+  height: clamp(215px, 66vw, 315px);
+  margin: auto;
+}
+.meal-stage::before {
+  position: absolute;
+  bottom: calc(var(--meal-floor, 20%) - 3%);
+  left: 50%;
+  width: 70%;
+  height: 11%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, #000a, transparent 70%);
+  content: '';
+  transition: bottom 320ms ease;
+}
+.meal-layer {
+  position: absolute;
+  left: 50%;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: transform 280ms ease, opacity 240ms ease;
+}
+.meal-entering { animation: meal-arrive 320ms cubic-bezier(.22,.74,.24,1) backwards; }
+.meal-leaving { opacity: 0; transform: translate(-50%, -18px); }
+@keyframes meal-arrive {
+  from { opacity: 0; transform: translate(-50%, -25px) scale(.96); }
+}
+.meal-toggle {
+  display: block;
+  position: relative;
+  z-index: 15;
+  min-height: 44px;
+  margin: 0 auto 14px;
+  padding: 0 16px;
+  border: 1px solid #ffffff65;
+  border-radius: 30px;
+  color: inherit;
+  background: #ffffff12;
+  font: inherit;
+  cursor: pointer;
+}
+.meal-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .meal-stage::before, .meal-layer { animation: none; transition: none; }
+}

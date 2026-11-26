@@ -19,7 +19,7 @@ from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / 'assets'
-SIMS = {'le-j': 'le-j-compose', 'maison-braha': 'maison-braha-table', 'kosher-fc': 'kosher-fc-menu', 'olev-burger': 'olev-burger-menu'}
+SIMS = {'le-j': 'le-j-compose', 'maison-braha': 'maison-braha-table', 'kosher-fc': 'kosher-fc-menu', 'olev-burger': 'olev-burger-menu', 'yoriz-tartarel': 'yoriz-tartarel-soiree'}
 
 
 def cut(src):

@@ -353,6 +353,7 @@ D.forEach(m=>m.items.forEach(i=>{if(i.ot)i.o=parseO(i.ot)}));
 const lo=l=>(Array.isArray(l.o)&&l.o.length?`<br><span class="mute">${l.o.map(esc).join(" · ")}</span>`:"")+(l.note?`<br><span class="mute">« ${esc(l.note)} »</span>`:"");
 function vCfg(){const c=S.cf,it=c&&merch(c.mid)&&items(c.mid).find(x=>x.id==c.id);if(!it)return vHome();let ex=0;
 let h=`<div><button class="btn sm ghost" data-a="open" data-v="${c.mid}">‹ ${t("back")}</button></div><div><h2>${esc(it.n)}</h2>${it.d?`<p class="mute">${esc(it.d)}</p>`:""}<b class="price" style="font-size:20px">${eur(it.p)}</b></div>`;
+h+=window.KoshMealPreview?.placeholder(it,c)||"";
 og(it).forEach((g,gi)=>{const sel=c.sel[gi]||[];h+=`<div class="box"><div class="row sp"><h3>${gi+1}. ${esc(g.t)}</h3><span class="mute">${t(g.one?"req":"optl")}</span></div><div>${g.ch.map((ch,ci)=>{const on=sel.includes(ci);if(on)ex+=+ch.p||0;return `<button class="opt" data-a="cfsel" data-g="${gi}" data-v="${ci}" aria-pressed="${on}"><span class="${g.one?"rad":"chk"}"></span><span class="grow">${esc(ch.n)}</span><span class="mute">${+ch.p?"+"+eur(ch.p):t(g.one?"incl":"free")}</span></button>`}).join("")}</div></div>`});
 const tot=eur((it.p+ex)*c.q);return h+`<div class="box">${inp("cf_note",t("instr"))}<div class="row sp"><div class="qty"><button class="minus" data-a="cfq" data-v="-1" aria-label="-">−</button><b>${c.q}</b><button data-a="cfq" data-v="1" aria-label="+">+</button></div><b class="price" style="font-size:22px">${tot}</b></div><button class="btn gold" data-a="cfadd">${t("addCart")} · ${tot}</button></div>`}
 function vTicket(){const o=store.orders[S.tk],m=o&&merch(o.m);if(!m)return vHome();
@@ -498,7 +499,7 @@ h+=({home:vHome,resto:vResto,cart:vCart,orders:vOrders,agenda:vAgenda,list:vList
 if(!db&&dbDone)h+=`<p class="mute">${t("local")}</p>`;
 h+=`<p class="motto">Pense bien, tout ira bien.</p><div class="dock"><div>${count()&&["home","resto","list","shop"].includes(S.tab)?`<button class="btn gold" data-a="tab" data-v="cart">${t("view")} (${count()}) · ${eur(subtotal())}</button>`:""}
 <nav class="nav">${[["home",["home","resto","cart"]],["list",["list"]],["shop",["shop"]],["agenda",["agenda"]],["profile",["profile","orders","pro"]]].map(([k,on])=>`<button data-a="tab" data-v="${k}" aria-pressed="${on.includes(S.tab)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICN[k]}"/></svg>${t(k)}</button>`).join("")}</nav></div></div>`;
-document.getElementById("app").innerHTML=h;if(document.querySelectorAll&&pt==render.tab){const ne=document.querySelectorAll(".chips,.hs");if(ne.length==qs.length)ne.forEach((e,k)=>{e.scrollLeft=qs[k]})}if(S.tab=="agenda"&&document.querySelector){const e=document.querySelector('.dayb[aria-pressed="true"]');if(e)e.scrollIntoView({inline:"center",block:"nearest"})}}
+document.getElementById("app").innerHTML=h;window.KoshMealPreview?.mount();if(document.querySelectorAll&&pt==render.tab){const ne=document.querySelectorAll(".chips,.hs");if(ne.length==qs.length)ne.forEach((e,k)=>{e.scrollLeft=qs[k]})}if(S.tab=="agenda"&&document.querySelector){const e=document.querySelector('.dayb[aria-pressed="true"]');if(e)e.scrollIntoView({inline:"center",block:"nearest"})}}
 function soft(){if(S.tab=="game"){dirty=true;return}const a=document.activeElement;if(a&&/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))dirty=true;else render()}
 function say(k,bad){S.toast=t(k);S.bad=!!bad}
 async function put(path,data){if(!db)return;try{await db.doc(path).set(JSON.parse(JSON.stringify(data)))}catch(e){say("ro",true);soft()}}
@@ -603,6 +604,8 @@ setInterval(()=>{if(S.tab=="home")soft()},3e5);
 <script src="/vendor/leaflet/leaflet.js"></script>
 <script src="/js/arcade.js"></script>
 <script src="/js/professional.js?v=restaurant-20261019-2"></script>
+<link rel="stylesheet" href="/meal-preview.css">
+<script src="/js/meal-preview.js"></script>
 <script src="/js/menu-composition.js?v=restaurant-20261019-2"></script>
 <script src="/js/content-studio.js?v=restaurant-20261019-2"></script>
 <script src="/js/live-map.js?v=workflow-4"></script>

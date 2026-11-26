@@ -242,7 +242,7 @@
       // ordre : socle, couches choisies dans l'ordre des touches, couvercle
       const order = [];
       if (config.bottom) order.push(['__b', config.bottom]);
-      layers.forEach(l => order.push([l.id, all[l.k]]));
+      layers.slice().sort((x, y) => (all[x.k].z || 0) - (all[y.k].z || 0)).forEach(l => order.push([l.id, all[l.k]]));
       if (config.top) order.push(['__t', config.top]);
       const keep = new Set(order.map(o => String(o[0])));
       nodes.forEach((el, id) => { if (!keep.has(String(id))) { nodes.delete(id); if (reduce || !el.animate) el.remove(); else el.animate([{ opacity: 1 }, { transform: 'translate(40cqw,-30cqw) rotate(40deg)', opacity: 0 }], { duration: 300, easing: 'ease-in' }).onfinish = () => el.remove(); } });
@@ -259,7 +259,7 @@
 
     /* ----- Scène « table » ----- */
     function tableRender(newKey) {
-      const present = [...new Set(sel)];
+      const present = [...new Set(sel)].filter(k => !all[k].noProp);
       table.querySelectorAll('.ks-prop[data-k]').forEach(el => { if (!present.includes(el.dataset.k)) el.remove(); });
       present.forEach(k => {
         const item = all[k], q = count(k), spot = item.spot || [50, 80, 30];
@@ -313,7 +313,7 @@
     }
     function add(k) {
       const it = all[k], s = it.step;
-      if (s.qty) { sel.push(k); layers.push({ id: ++seq, k }); }
+      if (s.qty) { if (s.max && countStep(s) >= s.max) return; sel.push(k); if (!it.noLayer) layers.push({ id: ++seq, k }); }
       else if (count(k)) { sel = sel.filter(x => x !== k); layers = layers.filter(l => l.k !== k); k = null; }
       else {
         if (s.max === 1) { sel = sel.filter(x => all[x].step !== s); layers = layers.filter(l => all[l.k].step !== s); }

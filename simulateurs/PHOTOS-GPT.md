@@ -66,7 +66,7 @@ Toutes les couches doivent avoir **le même angle** pour s'empiler : c'est le po
 | `kiddouch` | An engraved silver kiddush cup filled with red wine. |
 | `nappe` (facultatif) | A cream linen Shabbat tablecloth seen from above at 35 degrees, soft folds, subtle gold embroidery, filling the whole frame (opaque background, landscape 3:2). |
 
-## 3. Kosher FC — plateaux (12 images)
+## 3. Kosher FC — plateaux (13 images)
 
 Objectif : du vrai poulet frit de photographe culinaire, pas de rendu « plastique ».
 
@@ -84,20 +84,36 @@ Objectif : du vrai poulet frit de photographe culinaire, pas de rendu « plastiq
 | `sauce-ketchup` | A small clear plastic dipping cup of ketchup. |
 | `sauce-moutarde-miel` | A small clear plastic dipping cup of golden honey mustard sauce. |
 | `sauce-burger` | A small clear plastic dipping cup of creamy light-orange burger sauce. |
+| `sauce-fc` | A small clear plastic dipping cup of the house signature sauce: creamy, smoky orange-red, with visible pepper flecks. |
 | `coca`, `coca-zero`, `ice-tea`, `eau` | Utilise de préférence **les vraies photos des canettes** déjà présentes sur le site (les marques ne se génèrent pas bien). |
 
-## 4. Olev Burger — plateau (5 images)
+## 4. Olev Burger — burger étage par étage (3 images à compléter)
 
-**Bloc de style**
+Le pain, le steak, le cheddar et les cornichons sont **déjà en photo** (planche burger fournie). Il manque :
 
-> Ultra realistic commercial burger photography, professional studio, senior food photographer, 85 mm lens, soft daylight-style key light, warm cream tones, real texture: smashed beef patties with dark lacy crispy edges, molten cheese, glossy soft bun, natural imperfections, no CGI look. Every image shows ONE single item, alone, three-quarter angle with the camera about 20 degrees above horizontal. Perfectly centered, fully inside the frame with a clear margin. Transparent background (PNG with alpha), no props, no text, no logo, no hands. Square 1:1.
+**Bloc de style** (le même que la planche burger, pour que tout s'empile)
+
+> Ultra realistic commercial burger photography, professional studio, senior food photographer. ONE single burger layer, alone, seen from a frontal angle with the camera 14 degrees above horizontal, soft key light from the upper left, same scale and look as a classic burger ingredient sprite sheet. Perfectly centered, clear margin all around. Transparent background (PNG with alpha), no shadow on the ground, no props, no text, no hands. Landscape 2:1.
 
 | Clé | Sujet |
 | --- | --- |
-| `classique-olev` | A double smash burger: glossy soft golden bun, two thin smashed beef patties with crispy lacy edges, two slices of melted yellow cheese, pickle slices, ketchup and mustard. |
-| `frites-menu` | A plain kraft paper cone of golden thin-cut french fries. |
-| `ice-tea`, `coca-zero`, `coca-rouge` | Utilise **les vraies photos des canettes** déjà sur la fiche Olev du site. |
+| `oignons-caramelises` | A flat round layer of glossy dark golden caramelized onions, sized to fit a burger patty. |
+| `steak` (facultatif) | A thin smashed beef patty with dark, lacy, crispy irregular edges (smash burger style), to replace the thick patty. |
+| `frites` | A plain kraft paper cone of golden thin-cut french fries (square 1:1, camera 20 degrees above horizontal). |
 
-## 5. Porto Pizza K (10 images)
+Boissons : utilise **les vraies photos des canettes** déjà sur la fiche Olev du site (`ice-tea`, `coca-zero`, `coca-rouge`).
+
+## 5. Yoriz & Tartarel — plateau du soir (2 images)
+
+**Bloc de style**
+
+> Ultra realistic commercial Asian food photography, professional studio, senior food photographer, 85 mm lens, warm moody key light from the upper left, rising steam, true-to-life colours, no CGI look. ONE single dish, alone, three-quarter angle with the camera about 35 degrees above horizontal. Perfectly centered, clear margin. Transparent background (PNG with alpha), no table, no props, no text, no hands. Square 1:1.
+
+| Clé | Sujet |
+| --- | --- |
+| `riz-poulet-caramelise` | A dark stoneware bowl of fried rice topped with glossy caramelized crispy chicken fritters and sliced spring onion. |
+| `nems-poulet` | A dark rectangular stoneware plate with four golden crispy chicken spring rolls on a lettuce leaf, with a tiny bowl of sweet chili sauce. |
+
+## 6. Porto Pizza K (10 images)
 
 Les prompts existent déjà : voir `porto-pizza-k/PROMPTS-GPT.md` et `porto-pizza-k/ASSETS.md`.

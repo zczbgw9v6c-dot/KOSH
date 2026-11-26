@@ -948,7 +948,7 @@ class Handler(SimpleHTTPRequestHandler):
         if path in ['/restaurant','/livreur','/ceo']:
             self.path='/index.html'
             path='/index.html'
-        allowed = path in ('/','/index.html') or path in ['/manifest.webmanifest','/sw.js','/professional.css'] or path.startswith('/js/') and path.endswith('.js') or path.startswith('/img/') and path.endswith(('.jpg','.png','.webp','.svg')) or path.startswith('/vendor/leaflet/') and path.endswith(('.js','.css','.png'))
+        allowed = path in ('/','/index.html') or path in ['/manifest.webmanifest','/sw.js','/professional.css','/meal-preview.css'] or path.startswith('/js/') and path.endswith('.js') or path.startswith('/img/') and path.endswith(('.jpg','.png','.webp','.svg')) or path.startswith('/vendor/leaflet/') and path.endswith(('.js','.css','.png'))
         if not allowed or '..' in path or '%2e' in path.lower():self.send_error(404);return
         super().do_GET()
     def get_api(self,db):

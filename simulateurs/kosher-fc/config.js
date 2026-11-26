@@ -16,7 +16,8 @@ window.KOSH_CONFIGS['kosher-fc'] = {
       { k: 'menu-burger', n: 'Menu Burger', sub: 'Burger + waffle frites', p: 18, emoji: '🍔', spot: [40, 86, 46] },
       { k: 'menu-salade-cesar', n: 'Menu Salade César', sub: 'Nouveauté · + waffle frites', p: 15, emoji: '🥗', spot: [40, 86, 46] },
     ] },
-    { k: 'sauce', label: 'Sauce', max: 1, hint: 'Une sauce au choix, comprise dans le menu', items: [
+    { k: 'sauce', label: 'Sauce', max: 1, min: 1, need: 'Choisis ta sauce', hint: 'Une sauce au choix, comprise dans le menu', items: [
+      { k: 'sauce-fc', n: 'Sauce FC', sub: 'La signature maison', emoji: '🔥', spot: [72, 94, 16] },
       { k: 'sauce-mayo', n: 'Mayo', emoji: '🥛', spot: [72, 94, 16] },
       { k: 'sauce-ketchup', n: 'Ketchup', emoji: '🍅', spot: [72, 94, 16] },
       { k: 'sauce-moutarde-miel', n: 'Moutarde miel', emoji: '🍯', spot: [72, 94, 16] },
