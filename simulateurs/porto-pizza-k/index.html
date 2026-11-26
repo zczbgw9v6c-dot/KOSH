@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Porto Pizza K · Compose ta pizza</title>
+<meta name="theme-color" content="#1c7a33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Oswald:wght@500&display=swap">
+<style>
+  :root{color-scheme:light}
+  html,body{margin:0;background:#efe8dc;color:#1d1b18;font-family:Montserrat,system-ui,sans-serif}
+  main{max-width:440px;margin:0 auto;padding:16px 16px 40px}
+  .cart{margin-top:16px;padding:14px 16px;border-radius:18px;background:#faf6ef;box-shadow:0 0 0 1px rgba(60,40,20,.08)}
+  .cart h4{margin:0 0 8px;font-size:13px;font-weight:600;color:#6f675c}
+  .cart ul{list-style:none;margin:0;padding:0}
+  .cart li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(60,40,20,.1);font-size:14px}
+  .cart li small{display:block;color:#6f675c;font-size:12px;margin-top:2px}
+  .cart li b{font-variant-numeric:tabular-nums}
+  .cart .empty{font-size:13px;color:#8d8478}
+</style>
+</head>
+<body>
+<main>
+  <div id="simulateur"></div>
+  <section class="cart" aria-live="polite"><h4>Ta commande (démo)</h4><ul id="lignes"></ul><p class="empty" id="vide">Aucune pizza pour l’instant.</p></section>
+</main>
+<script src="assets/manifest.js"></script>
+<script src="simulateur.js"></script>
+<script>
+  // Démo : chaque pizza sortie du four arrive dans cette liste. Dans Kosh, onAdd ajoutera la ligne au panier.
+  const fmt = n => new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(n);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const sim = PortoPizzaSimulator.mount(document.getElementById('simulateur'), {
+    onAdd(line) {
+      document.getElementById('vide').hidden = true;
+      const li = document.createElement('li');
+      li.innerHTML = `<span>${esc(line.name)}<small>${line.options.map(esc).join(' · ')}</small></span><b>${fmt(line.price)}</b>`;
+      document.getElementById('lignes').appendChild(li);
+    },
+  });
+</script>
+</body>
+</html>

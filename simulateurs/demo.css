@@ -1,0 +1,9 @@
+html,body{margin:0;background:#e9e6ee;color:#1d1630;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Segoe UI",system-ui,sans-serif}
+main{max-width:440px;margin:0 auto;padding:14px 12px 40px}
+.cart{margin-top:14px;padding:14px 16px;border-radius:20px;background:#fff}
+.cart h4{margin:0 0 8px;font-size:13px;font-weight:600;color:#6f6a7d}
+.cart ul{list-style:none;margin:0;padding:0}
+.cart li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(0,0,0,.08);font-size:14px}
+.cart li small{display:block;color:#6f6a7d;font-size:12px;margin-top:2px}
+.cart li b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.cart .empty{font-size:13px;color:#8d8898;margin:0}
